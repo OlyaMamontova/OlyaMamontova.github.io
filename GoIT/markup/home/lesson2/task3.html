@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task3</title>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label>Name<br/>
+            <input type="text" name="name"></label><br/>
+        </p>
+
+        <p>
+            <label>Email<br/>
+            <input type="text" name="email"></label>
+        </p>
+
+        <p>Sex<br/>
+            <label><input type="radio" name="sex" value="male"/>Male</label>
+            <label><input type="radio" name="sex" value="female"/>Female</label>
+        </p>
+
+        <p>Current status<br/>
+            <label><input type="checkbox" name="status" value="student"/>Student</label><br/>
+            <label><input type="checkbox" name="status" value="employed"/>Employed</label><br/>
+            <label><input type="checkbox" name="status" value="unemployed"/>Unemployed</label>
+        </p>
+
+        <p>Month and Year of birth <br/>
+            <select name="month">
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+            </select>
+            <select name="year">
+                <option value="1984">1984</option>
+                <option value="1985">1985</option>
+                <option value="1986">1986</option>
+                <option value="1987">1987</option>
+            </select></p>
+
+        <p>Skills and Technologies <br/>
+            <select name="skills" multiple size="10">
+                <optgroup label="Tech skills"></optgroup>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="git">git</option>
+                <optgroup label="Soft skills"></optgroup>
+                <option value="time_managment">Time managment</option>
+                <option value="proactivity">Proactivity</option>
+                <option value="teamwork">Teamwork</option>
+                <option value="leadership">Leadership</option>
+            </select>
+        </p>
+
+        <p>Photo <br/>
+            <input type="file" name="photo" value="Choose File"/>
+        </p>
+
+        <p>
+            <label>Comments<br/>
+            <textarea name="Comments" id="" cols="20" rows="3"></textarea></label>
+        </p>
+
+        <input type="submit" value="Save"/>
+
+    </form>
+
+</body>
+</html>
