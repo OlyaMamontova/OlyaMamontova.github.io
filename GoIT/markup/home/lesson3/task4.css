@@ -1,0 +1,16 @@
+/*цвет внешних ссылок #f70;*/
+a[href^="http"]{
+    color:#f70;
+}
+
+/*ссылки на сервисы google должны быть цвета \#666*/
+a[href*="google"]{
+    color:#666;
+}
+
+/*ссылка в новом окне должна после себя содержать utf символ ? (без подчеркивания)*/
+a[target="_blank"]:after{
+    content: " \279A";
+    display: inline-block;
+    margin-left: 5px;
+}
