@@ -1,0 +1,27 @@
+.line{
+    background:#A64DFF;
+    overflow:hidden;
+}
+.menu li{
+    float:left;
+    color:white;
+    font-family:Impact;
+    line-height:2;
+    font-size:1.2em;
+    padding:0 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.menu{
+    width:900px;
+    margin:0 auto;
+    list-style:none;
+}
+.menu li:hover{
+    background:#EEEEEE;
+    color:#A8A4A1;
+}
+li:last-of-type{
+    float:right;
+
+}

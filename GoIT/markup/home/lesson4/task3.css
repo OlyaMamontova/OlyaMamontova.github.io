@@ -1,0 +1,34 @@
+.line{
+    font-family:Verdana;
+    font-size:0.9em;
+}
+a{
+    display:inline-block;
+    color:#a13bcf;
+    cursor:pointer;
+    text-decoration:none;
+}
+.item{
+    border:1px solid #ddd;
+    border-radius:5px;
+    padding:5px;
+    min-width:20px;
+    height:20px;
+    text-align:center;
+}
+.text{
+    text-transform:uppercase;
+    padding:5px;
+    margin:0 10px;
+}
+span{
+    vertical-align:bottom;
+    margin:10px;
+}
+.item:hover{
+    background:#a13bcf;
+    color:white;
+}
+.text:hover{
+    color:#C0C0C0;
+}
