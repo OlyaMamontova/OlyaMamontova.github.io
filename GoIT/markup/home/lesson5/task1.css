@@ -1,0 +1,51 @@
+.line{
+    background:#00A0FF;
+    position:relative;
+}
+.menu li {
+    display:inline-block;
+}
+.menu{
+    width:900px;
+    margin:0 auto;
+}
+.menu>li>a{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    font-family:Impact;
+    line-height:2;
+    font-size:1.2em;
+    padding:0 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.menu li:hover{
+    background:#EEEEEE;
+}
+.menu li:hover a{
+    color:#A8A4A1;
+}
+.menu2{
+    width:100%;
+    position:absolute;
+    top:38px;
+    left:0;
+    background:#EEEEEE;
+    color:#A8A4A1;
+    padding-left:23%;
+    visibility: hidden;
+}
+.menu2>li>a{
+    text-decoration:none;
+    font-family:sans-serif;
+    color:#A8A4A1;
+    line-height:2.7;
+    font-size:0.9em;
+    padding:0 5px;
+    cursor: pointer;
+}
+.menu li:hover .menu2{
+    visibility:visible;
+}
