@@ -1,40 +1,50 @@
 .line{
     background:#00A0FF;
     position:relative;
+    margin: 0;
+    padding: 0;
 }
-.menu li {
-    display:inline-block;
+.menu li:hover .menu2{
+    visibility:visible;
+    background:#eee;
 }
 .menu{
     width:900px;
     margin:0 auto;
 }
+.menu li {
+    display:inline-block;
+}
+
 .menu>li>a{
     display:inline-block;
     text-decoration:none;
     color:white;
-    font-family:Impact;
+    font-family:Impact, sans-serif;
     line-height:2;
-    font-size:1.2em;
-    padding:0 10px;
+    font-size:1.1em;
+    padding:0 8px;
     cursor: pointer;
     text-transform: uppercase;
 }
 
 .menu li:hover{
-    background:#EEEEEE;
+    background:#eee;
 }
 .menu li:hover a{
     color:#A8A4A1;
 }
+.menu2 li {
+    display:inline-block;
+}
 .menu2{
     width:100%;
     position:absolute;
-    top:38px;
+    top:100%;
     left:0;
-    background:#EEEEEE;
+    right:0;
+    text-align: center;
     color:#A8A4A1;
-    padding-left:23%;
     visibility: hidden;
 }
 .menu2>li>a{
@@ -45,7 +55,4 @@
     font-size:0.9em;
     padding:0 5px;
     cursor: pointer;
-}
-.menu li:hover .menu2{
-    visibility:visible;
 }
