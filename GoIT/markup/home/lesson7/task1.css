@@ -1,0 +1,63 @@
+.eye_check{
+    width: 430px;
+    text-transform: uppercase;
+    text-align: justify;
+    padding: 100px;
+    font-family: Arial, sans-serif;
+    color: rgba(0,0,0,0);
+    text-shadow: 1px 1px 3px #555555;
+    line-height: 0.2;
+}
+p:after{
+    content:"";
+    display:inline-block;
+    width: 100%;
+}
+hr{
+    color:red;
+    opacity: 0.2;
+}
+.line01{
+    font-size: 710%;
+}
+.line02{
+    font-size: 640%;
+}
+.line03{
+    font-size: 570%;
+}
+.line04{
+    font-size: 500%;
+}
+.line05{
+    font-size: 430%;
+    line-height: 0.3;
+}
+.line06{
+    font-size: 360%;
+    line-height: 0.3;
+}
+.line07{
+    font-size: 290%;
+    line-height: 0.4;
+}
+.line08{
+    font-size: 220%;
+    line-height: 0.5;
+}
+.line09{
+    font-size: 150%;
+    line-height: 0.8;
+}
+.line10{
+    font-size: 100%;
+    line-height: 0.4;
+}
+.line11{
+    font-size: 80%;
+    line-height: 1.6;
+}
+.line12{
+    font-size: 60%;
+    line-height: 1.2;
+}
