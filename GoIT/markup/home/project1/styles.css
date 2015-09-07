@@ -1,0 +1,308 @@
+.logo_menu{
+    position: relative;
+    overflow: hidden;
+    max-width: 1400px;
+    -margin: 0 auto;
+    padding:40px 24% 0 19%;
+    font-weight: 600;
+    -margin-bottom: 0;
+}
+.logo{
+    display: inline-block;
+    float:left;
+    color:#3070a8;
+    font-size: 2.5em;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.menu ul{
+    position: relative;
+    top:10px;
+    list-style-type: none;
+    float: right;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color:#989898;
+    font-family:  sans-serif;
+    font-weight:bolder;
+}
+.menu li{
+    display: inline-block;
+    padding:0 10px 30px;
+    border-bottom: 5px solid transparent;
+}
+.menu li:hover{
+    color:#3070a8;
+    cursor:pointer;
+    border-bottom: 5px solid #3070a8;
+}
+
+.banner{
+    position:relative;
+    max-width: 1600px;
+    margin: -5px auto 0;
+    background-image: url("images/banner-bg.png");
+    background-size: cover;
+    padding: 120px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+.color_filter{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(3,60,105,0.8);
+    z-index: -1;
+}
+.banner p{
+    color:#fff;
+    text-align: center;
+}
+.about_company{
+    font-family: Calibri, sans-serif;
+    font-size: 2.6em;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+.banner span{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+
+}
+.about_content{
+    padding:0 300px;
+    font-family: Calibri, sans-serif;
+    font-size: 1.5em;
+    font-style: italic;
+    line-height:1.5;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.banner button{
+    width: 225px;
+    height:60px;
+    background-color: transparent;
+    border:1px solid #fff;
+    margin-top:50px;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+.banner button:hover{
+    cursor:pointer;
+    background-color:#EAECEE;
+    color:#3070a8;
+    border-radius: 4px;
+}
+
+
+.headline{
+    text-transform:uppercase;
+    text-align: center;
+    font-family: Actor,  sans-serif;
+    font-weight: 600;
+    font-size:170%;
+    color:#2F4F4F;
+    padding-bottom: 40px;
+}
+.offers{
+    width: 900px;
+    margin:20px auto;
+}
+.ads{
+    display: inline-block;
+    width:295px;
+    border-radius:7px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color:#fff;
+}
+div.best_value{
+    border:4px solid #EE8129;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+div.standart,div.ultimate{
+    border:1px solid #EAECEE;
+    position: relative;
+    z-index: -1;
+}
+div.standart{
+    left:10px;
+}
+div.ultimate{
+    right:10px;
+}
+.ads header{
+    text-transform:uppercase;
+    text-align:center;
+    color:#fff;
+    font-weight:bold;
+    font-size:150%;
+}
+header.standart{
+    padding:17px 0;
+    background-color:#37C2D3;
+    border-top-left-radius:7px;
+}
+header.best_value{
+    padding:20px 0;
+    background-color:#EE8129;
+}
+header.ultimate{
+    padding:17px 0;
+    background-color:#1CB79A;
+    border-top-right-radius:7px;
+}
+.offer{
+    text-transform:uppercase;
+    text-align:center;
+    font-size:140%;
+    color:#2F4F4F;
+    font-stretch: ultra-condensed;
+}
+.price{
+    text-align:center;
+    font-size:400%;
+    font-weight:bold;
+    margin:-8px 0;
+    color:#2F4F4F;
+}
+.price:before{
+    content:'$';
+    vertical-align:top;
+    font-size:0.3em;
+    font-weight:400;
+}
+.period{
+    vertical-align:sub;
+    font-size:0.3em;
+    font-weight:normal;
+}
+.ads li:nth-child(2n+1){
+    background-color:#EDF5FD;
+}
+.ads li:nth-child(2n){
+    background-color:#F5F5F6;
+}
+.ads ul{
+    margin:30px 0 0 -25px;
+}
+.ads li{
+    width:200px;
+    padding: 7px 0 7px 60px;
+    color: #888C94;
+    font-size: 90%;
+    list-style:none;
+    background-image: url(images/bul.png);
+    background-repeat: no-repeat;
+    background-position: 30px, 4px;
+    margin-bottom: 1px;
+    letter-spacing: 1px;
+}
+.ads button{
+    width:252px;
+    height:45px;
+    border-radius:7px;
+    text-transform:uppercase;
+    color:#fff;
+    font-weight:bold;
+    font-size:90%;
+    box-sizing: border-box;
+}
+button.standart,
+button.ultimate{
+    background-color:#3371A6 ;
+    margin: 15px 17px 20px;
+    border:1px solid #4682B4;
+    border-bottom: 3px solid #16436A;
+}
+button.best_value{
+    background-color:#EE8129;
+    margin: 15px 17px 30px;
+    border:1px solid #EE8129;
+    border-bottom: 3px solid #B3560B;
+}
+
+.testimonials{
+    position:relative;
+    max-width:1600px;
+    margin:0 auto;
+    background-image: url(images/bg.png);
+    background-size: cover;
+    padding: 0 200px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+.testimonials_filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(12,18,23, 0.85);
+    z-index: -1;
+}
+.what_client_says{
+    text-align: center;
+    text-transform: uppercase;
+    color:#3170A8;
+    font-family: Tahoma, sans-serif;
+    font-size: 300%;
+    font-weight: 400;
+    padding:50px 0 0;
+}
+.first_word{
+    color:#EE8129;
+    font-weight: 400;
+}
+.testimonials_box{
+    display:inline-block;
+    position:relative;
+    background-color:#F5F5F6;
+    width:400px;
+    padding:17px;
+    box-sizing: border-box;
+    margin:0 40px 100px 25px;
+    vertical-align: top;
+}
+.testimonials_box::before{
+    position: absolute;
+    top:40px;
+    left:-30px;
+    border:15px solid transparent;
+    border-right: 20px solid #F5F5F6;
+    content: "";
+}
+.customer_name{
+    float:left;
+}
+.customer_name:before{
+    content: "-";
+}
+.customer_category{
+    float:right;
+}
+.testimonial_head{
+    overflow: hidden;
+    border-bottom: 1px dotted;
+    color: #3170A8;
+    padding-bottom: 7px;
+    font-family:  sans-serif;
+    font-style: italic;
+    font-size: 90%;
+}
+img.photo1, img.photo2{
+    width: 120px;
+    height: 120px;
+    vertical-align: top;
+}
+.testimonial_content{
+    padding-top: 12px;
+    font-family:  sans-serif;
+    font-size: 90%;
+    color:#666666;
+}
