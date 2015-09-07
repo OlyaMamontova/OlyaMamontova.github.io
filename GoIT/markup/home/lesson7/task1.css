@@ -5,7 +5,7 @@
     padding: 100px;
     font-family: Arial, sans-serif;
     color: rgba(0,0,0,0);
-    text-shadow: 1px 1px 3px #555555;
+    text-shadow: 1px 1px 4px #555555;
     line-height: 0.2;
 }
 p:after{
@@ -14,7 +14,7 @@ p:after{
     width: 100%;
 }
 hr{
-    color:red;
+    color:#FF0000;
     opacity: 0.2;
 }
 .line01{
