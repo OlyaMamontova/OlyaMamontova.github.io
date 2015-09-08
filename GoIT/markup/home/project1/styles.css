@@ -2,10 +2,8 @@
     position: relative;
     overflow: hidden;
     max-width: 1400px;
-    -margin: 0 auto;
     padding:40px 24% 0 19%;
     font-weight: 600;
-    -margin-bottom: 0;
 }
 .logo{
     display: inline-block;
@@ -39,7 +37,7 @@
 .banner{
     position:relative;
     max-width: 1600px;
-    margin: -5px auto 0;
+    margin: -5px auto 60px;
     background-image: url("images/banner-bg.png");
     background-size: cover;
     padding: 120px;
@@ -70,7 +68,6 @@
     text-transform: uppercase;
     font-size: 1.5em;
     font-weight: 600;
-
 }
 .about_content{
     padding:0 300px;
@@ -91,6 +88,7 @@
     color:#fff;
     font-size: 0.8em;
     font-weight: 600;
+    font-style: normal;
 }
 .banner button:hover{
     cursor:pointer;
@@ -99,6 +97,73 @@
     border-radius: 4px;
 }
 
+.about h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #41525c;
+    font-size: 2em;
+}
+.containers_about{
+    width: 1200px;
+    margin: 0 auto;
+}
+.container_about{
+    display: inline-block;
+    width: 350px;
+    margin:30px 0 30px 45px;
+}
+.container_about p{
+    text-align: center;
+    font-family: Calibri, sans-serif;
+    font-size: 1.1em;
+    color:#a7a7a7;
+    margin:25px 0;
+}
+.container_about p:first-of-type{
+    text-transform: uppercase;
+    color: #4c83b4;
+    font-size: 2.3em;
+    line-height: 0.8;
+}
+.images_about{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.content_block{
+    background-image: url("images/bg_portfolio.jpg");
+    background-size: cover;
+    width: 1600px;
+    margin: 0 auto 80px;
+    box-sizing: border-box;
+    padding:80px 37% 50px 12%;
+    font-family:   sans-serif;
+}
+.content_block h2{
+    color:#e07a28;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+.content_block p{
+    color:#fff;
+    font-style: italic;
+    font-size: 1.3em;
+    line-height: 0.1em;
+    margin-bottom: 50px;
+}
+.content_block li {
+    color: #939393;
+    line-height: 1.8em;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+.content_block li:nth-child(even){
+    color: #2f6b9f;
+    padding: 20px 0;
+}
 
 .headline{
     text-transform:uppercase;
@@ -258,6 +323,9 @@ button.best_value{
 .first_word{
     color:#EE8129;
     font-weight: 400;
+}
+.testimonial_container{
+    display:inline-block;
 }
 .testimonials_box{
     display:inline-block;
