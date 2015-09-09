@@ -1,8 +1,8 @@
 .logo_menu{
     position: relative;
     overflow: hidden;
-    max-width: 1400px;
-    padding:40px 24% 0 19%;
+    max-width: 1100px;
+    margin:40px auto 0;
     font-weight: 600;
 }
 .logo{
@@ -40,9 +40,10 @@
     margin: -5px auto 60px;
     background-image: url("images/banner-bg.png");
     background-size: cover;
-    padding: 120px;
+    padding: 120px 0;
     box-sizing: border-box;
     z-index: 0;
+    text-align: center;
 }
 .color_filter{
     position: absolute;
@@ -53,16 +54,16 @@
     background-color: rgba(3,60,105,0.8);
     z-index: -1;
 }
-.banner p{
-    color:#fff;
-    text-align: center;
+.banner p {
+    color: #fff;
+    font-family: Calibri, sans-serif;
 }
 .about_company{
-    font-family: Calibri, sans-serif;
     font-size: 2.6em;
-    margin-bottom: 20px;
     line-height: 1.1;
     letter-spacing: 2px;
+    max-width: 1000px;
+    margin: 50px auto 20px;
 }
 .banner span{
     text-transform: uppercase;
@@ -70,13 +71,12 @@
     font-weight: 600;
 }
 .about_content{
-    padding:0 300px;
-    font-family: Calibri, sans-serif;
+    max-width: 700px;
+    margin: 50px auto 20px;
     font-size: 1.5em;
     font-style: italic;
     line-height:1.5;
     margin-bottom: 0;
-    padding-bottom: 0;
 }
 .banner button{
     width: 225px;
@@ -105,7 +105,7 @@
     font-size: 2em;
 }
 .containers_about{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .container_about{
@@ -130,14 +130,18 @@
     width: 150px;
     margin: 0 auto;
 }
-
-.content_block{
+.content_block_bg{
     background-image: url("images/bg_portfolio.jpg");
     background-size: cover;
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto 80px;
+}
+.content_block{
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: left;
     box-sizing: border-box;
-    padding:80px 650px 50px 200px;
+    padding:80px 30% 50px 3%;
     font-family:   sans-serif;
 }
 .content_block h2{
@@ -151,7 +155,6 @@
     color:#fff;
     font-style: italic;
     font-size: 1.3em;
-    line-height: 0.1em;
     margin-bottom: 50px;
 }
 .content_block li {
@@ -292,14 +295,12 @@ button.best_value{
     border-bottom: 3px solid #B3560B;
 }
 
-.testimonials{
+.testimonials_bg{
     position:relative;
     max-width:1600px;
     margin:0 auto;
     background-image: url(images/bg.png);
     background-size: cover;
-    padding: 0 200px;
-    box-sizing: border-box;
     z-index: 0;
 }
 .testimonials_filter {
@@ -317,14 +318,19 @@ button.best_value{
     color:#3170A8;
     font-family: Tahoma, sans-serif;
     font-size: 300%;
-    font-weight: 400;
+    font-weight: 600;
     padding:50px 0 0;
 }
 .first_word{
     color:#EE8129;
     font-weight: 400;
 }
-.testimonial_container{
+.testimonials{
+    max-width: 1300px;
+    margin:0 auto;
+    padding-left: 2%;
+}
+.testimonials_photo_box{
     display:inline-block;
 }
 .testimonials_box{
@@ -373,4 +379,64 @@ img.photo1, img.photo2{
     font-family:  sans-serif;
     font-size: 90%;
     color:#666666;
+}
+.contacts_map{
+    position: relative;
+    max-width: 1600px;
+    height: 350px;
+    margin: 0 auto;
+}
+.contacts{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 300px;
+}
+.adress{
+    max-width:350px;
+    margin: 55px auto;
+}
+.contacts ul{
+    list-style-type: none;
+    font:  0.9em 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color:#666;
+}
+.contacts li{
+    position: relative;
+    padding:7px 20px;
+}
+.contacts li img{
+    position: absolute;
+    left:-20px;
+}
+.social_link a{
+    padding:10px 0 0 20px;
+    cursor: pointer;
+}
+.map{
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    background-image: url("images/map.png");
+    width:50%;
+}
+footer{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding:20px;
+    background: #3070a8;
+    text-align: center;
+    color:#fff;
+    font:  0.9em 'Trebuchet MS', sans-serif;
+    line-height: 2;
+}
+.bold{
+    font-weight: 600;
+}
+.black{
+    color:#000;
+    font-weight: 600;
 }
