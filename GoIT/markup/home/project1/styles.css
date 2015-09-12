@@ -192,17 +192,20 @@
 div.best_value{
     border:4px solid #EE8129;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 2;
 }
 div.standart,div.ultimate{
     border:1px solid #EAECEE;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
+
 div.standart{
     left:10px;
 }
-div.ultimate{
-    right:10px;
+div.ultimate {
+    right: 10px;
 }
 .ads header{
     text-transform:uppercase;
@@ -280,7 +283,13 @@ header.ultimate{
     font-weight:bold;
     font-size:90%;
     box-sizing: border-box;
+
 }
+.ads button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+}
+
 button.standart,
 button.ultimate{
     background-color:#3371A6 ;
