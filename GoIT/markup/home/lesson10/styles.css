@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.images_box{
+    max-width: 1600px;
+    background-color: #f6f9f9;
+    margin:0 auto;
+    padding:20px 0;
+}
+.title{
+    font-family: 'Lato', sans-serif;
+}
+.title h1 {
+    color: #2e3a50;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+}
+.title p{
+    color: #909090;
+    line-height: 0;
+}
+.images_body{
+    max-width:1180px;
+    min-width: 360px;
+    margin:80px auto;
+}
+.wrapper_image{
+    position: relative;
+    display: inline-block;
+    margin:15px;
+}
+.img_button{
+    position: absolute;
+    left:0;
+    bottom:0;
+    top:0;
+    right: 0;
+    background-color: rgba(39,166,243,0.8 );
+    display: none;
+}
+.button{
+    border:1px solid #f6f9f9;
+    border-radius: 4px;
+    padding:12px;
+    margin:115px 5px ;
+}
+.wrapper_image:hover .img_button{
+    display: inline-block;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(39,166,243);
+}
+
