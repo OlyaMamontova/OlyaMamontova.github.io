@@ -162,10 +162,10 @@
     line-height: 1.8em;
     font-size: 1em;
     letter-spacing: 1px;
+    padding: 10px 0;
 }
-.content_block li:nth-child(even){
+.content_block li:hover{
     color: #2f6b9f;
-    padding: 20px 0;
 }
 
 .headline{
