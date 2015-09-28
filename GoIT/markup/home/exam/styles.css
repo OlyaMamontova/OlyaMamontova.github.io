@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Oxygen";
+    src: url("fonts/Oxygen-Regular.ttf");
+}
 body{
     background: url("images/body.jpg") repeat;
     margin: 0 auto;
@@ -58,7 +62,7 @@ body{
 }
 .logo p{
     color:#b6b6b6;
-    font-family: 'OxygenMono-Regular', sans-serif;
+    font-family: Arial;
     font-size: 0.7em;
     line-height: 0;
 }
@@ -94,7 +98,7 @@ body{
     top:25px;
     left:-10px;
     width: 165px;
-    height: 157px;
+    height: 160px;
     background-color: #fff;
     list-style-type: none;
     border:1.5px solid #dddddd;
@@ -123,7 +127,7 @@ body{
     content: "";
 }
 .submenu>li{
-    margin:5px;
+    margin:4px 5px;
     border-bottom: 1px solid #dddddd;
 }
 .submenu>li:last-child{
@@ -131,7 +135,7 @@ body{
 }
 .submenu a{
     display: inline-block;
-    height: 25px;
+    height: 30px;
     margin-bottom: 4px;
     padding:5px;
     box-sizing: border-box;
@@ -158,7 +162,7 @@ body{
     background-color: #f3f3f3;
     border-radius: 3px;
     width: 150px;
-    height: 35px;
+    height: 30px;
 }
 
 .banner{
@@ -221,11 +225,9 @@ body{
 }
 .banner_left_arrow{
     left: 5px;
-    background: url("images/arrow_for_banner.png") no-repeat left;
 }
 .banner_right_arrow{
     right: 11px;
-    background: url("images/arrow_for_banner.png") no-repeat right;
 }
 #banner_left_arrow:checked ~ .banner_photo1,
 #banner_right_arrow:checked ~ .banner_photo2{
