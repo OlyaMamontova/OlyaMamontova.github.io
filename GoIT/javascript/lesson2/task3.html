@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task3</title>
+</head>
+<body>
+<script>
+    'use strict';
+    var login = prompt('Логін');
+    if(login == 'admin'){
+        var password = prompt('Пароль');
+        if(password == 'passw0rd'){
+            alert('Welcome home!');
+        }else if(password != null){
+            alert('Wrong password');
+        }else{
+            alert('Canceled');
+        }
+    }else if(login != null){
+        alert('Access denied');
+    }else{
+        alert('Canceled');
+    }
+</script>
+</body>
+</html>
