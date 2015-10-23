@@ -20,7 +20,7 @@ function removeClass(obj, cls){
 
 var obj = {
     className: 'open menu menu my'
-};v
+};
 removeClass(obj, 'menu');
 
 console.log( "'" + obj.className + "'" );
