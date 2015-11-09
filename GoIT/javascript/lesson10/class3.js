@@ -1,4 +1,4 @@
-/*Задание 3
+/*Р—Р°РґР°РЅРёРµ 3
 
  Write a JavaScript function that returns a passed string with
  letters in alphabetical order. Go to the editor
