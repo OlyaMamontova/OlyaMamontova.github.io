@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .external {
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<a name="list">список</a>
+<ul>
+    <li><a href="http://google.com">http://google.com</a></li>
+    <li><a href="/tutorial">/tutorial.html</a></li>
+    <li><a href="local/path">local/path</a></li>
+    <li><a href="ftp://ftp.com/my.zip">ftp://ftp.com/my.zip</a></li>
+    <li><a href="http://nodejs.org">http://nodejs.org</a></li>
+    <li><a href="http://internal.com/test">http://internal.com/test</a></li>
+</ul>
+
+
+
+<script>
+    var links = document.querySelectorAll('a');
+
+    for(var i = 0; i < links.length; i++){
+        var href = links[i].getAttribute('href');
+        if(!href) continue; //нема атрибуту
+        if(href.indexOf('://') === -1) continue // без протоколу
+        if(href.indexOf('http://internal.com') === 0) continue; //внутрішня
+
+        links[i].classList.add('external');
+    }
+</script>
+</body>
+</html>

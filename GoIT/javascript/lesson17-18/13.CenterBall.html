@@ -1,0 +1,42 @@
+<!--
+Поместите мяч в центр поля.
+    Менять CSS нельзя, мяч должен переносить в центр ваш скрипт, через установку
+    нужных стилей элемента.
+    JavaScript-код должен работать при разных размерах мяча (10, 20, 30 пикселей)
+    без изменений.
+    JavaScript-код должен работать при различных размерах и местоположениях поля на
+    странице без изменений. Также он не должен зависеть от ширины рамки поля border.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #field {
+            width: 200px;
+            border: 10px groove black;
+            background-color: #00FF00;
+            position: relative;
+        }
+
+        #ball {
+            position: absolute;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="field">
+    <img src="https://js.cx/clipart/ball.svg" width="40" height="40" id="ball"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+</div>
+<script>
+    var ball = document.getElementById('ball');
+    var field = document.getElementById('field');
+    ball.style.left = Math.round(field.clientWidth / 2 - ball.offsetWidth / 2) + 'px';
+    ball.style.top = Math.round(field.clientHeight / 2 - ball.offsetHeight / 2) + 'px';
+
+</script>
+</body>
+</html>

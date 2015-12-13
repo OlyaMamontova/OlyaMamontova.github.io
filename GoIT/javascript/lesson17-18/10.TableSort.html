@@ -1,0 +1,75 @@
+<!--
+ Есть таблица:
+Имя 	Фамилия 	Отчество 	Возраст
+Вася 	Петров 	Александрович 	10
+Петя 	Иванов 	Петрович 	15
+Владимир 	Ленин 	Ильич 	9
+… 	… 	… 	…
+
+Строк в таблице много: может быть 20, 50, 100.. Есть и другие элементы в документе.
+Как бы вы предложили отсортировать содержимое таблицы по полю Возраст?
+Обдумайте алгоритм, реализуйте его.
+Как сделать, чтобы сортировка работала как можно быстрее? А если в таблице 10000 строк (бывает и такое)?
+P.S. Может ли здесь помочь DocumentFragment?
+P.P.S. Если предположить, что у нас заранее есть массив данных для таблицы в JavaScript — что быстрее: отсортировать эту таблицу или сгенерировать новую?
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Ім'я</th>
+        <th>Прізвище</th>
+        <th>По батькові</th>
+        <th>Вік</th>
+    </tr>
+
+    <tr>
+        <th>Петро</th>
+        <th>Петров</th>
+        <th>Петрович</th>
+        <th>10</th>
+    </tr>
+
+    <tr>
+        <th>Василь</th>
+        <th>Іванов</th>
+        <th>Васильович</th>
+        <th>18</th>
+    </tr>
+
+    <tr>
+        <th>Микола</th>
+        <th>Миколаєнко</th>
+        <th>Миколайович</th>
+        <th>4</th>
+    </tr>
+</table>
+<button onclick="sort()">Сортувати</button>
+
+<script>
+    function sort(){
+        var tbody = document.getElementsByTagName('tbody')[0];
+        var rows = [];
+
+        for(var i = 0; i < tbody.children.length; i++){
+            rows.push(tbody.children[i]);
+        }
+
+        rows.sort(function(a, b){
+            return a.lastElementChild.innerHTML- b.lastElementChild.innerHTML;
+        });
+
+        for(var i = 0; i < rows.length; i++){
+            tbody.appendChild(rows[i]);
+        }
+    }
+</script>
+
+</body>
+</html>

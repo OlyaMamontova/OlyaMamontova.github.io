@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div id="widget" data-widget-name="menu">Выберите жанр</div>
+
+<script>
+    var div = document.getElementById('widget');
+
+    var widgetName = div.getAttribute('data-widget-name');//  в усіх браузерах
+
+ //   var widgetName = div.dataset.widgetName;
+
+    alert( widgetName ); // "menu"
+</script>
+</body>
+</html>

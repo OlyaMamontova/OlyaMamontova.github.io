@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    var a = document.createElement('a');
+    a.className = 'button';
+    a.href = '/';
+    a.appendChild(document.createTextNode('Нажми меня'));
+    a.style.cssText = '-moz-border-radius: 8px;\
+            -webkit-border-radius: 8px;\
+    border-radius: 8px;\
+    border: 2px groove green;\
+    display: block;\
+    height: 30px;\
+    line-height: 30px;\
+    width: 100px;\
+    text-decoration: none;\
+    text-align: center;\
+    color: red;\
+    font-weight: bold;\
+    ';
+    var div = document.body.children[0];
+    div.appendChild(a);
+</script>
+</body>
+</html>

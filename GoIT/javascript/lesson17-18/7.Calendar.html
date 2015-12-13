@@ -1,0 +1,80 @@
+<!--
+ Напишите функцию, которая умеет генерировать календарь для заданной пары (месяц, год).
+Календарь должен быть таблицей, где каждый день — это TD.
+У таблицы должен быть заголовок с названиями дней недели, каждый день — TH.
+Синтаксис: createCalendar(id, year, month).
+Такой вызов должен генерировать текст для календаря месяца month в году year,
+а затем помещать его внутрь элемента с указанным id.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td,
+        th{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        th{
+            font-weight: bold;
+            background-color: lightpink;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id = "calendar"></div>
+
+    <script>
+        function createCalendar(id, year, month){
+            var elem = document.getElementById('calendar');
+            var mon = month - 1;
+            var date = new Date(year, mon);
+
+            var table = '<table><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>нд</th><tr></tr>';
+
+            //заповнює пробілами до першого дня
+            for(var i = 0; i < getNumberDay(date) - 1; i++){
+                table += '<td></td>';
+            }
+
+            //заповнює таблицю датами
+            while (date.getMonth() == mon){
+                table += '<td>' + date.getDate() + '</td>';
+
+                if ((getNumberDay(date)-1) % 7 == 6){ //нд - останній день
+                    table += '</tr><tr>';
+                }
+
+                date.setDate(date.getDate() + 1);
+            }
+
+            //заповнює пробілами в кінці, якщо треба
+            if(getNumberDay(date)-1 != 0) {
+                for (var i = getNumberDay(date) - 1; i < 7; i++) {
+                    table += '<td></td>';
+                }
+            }
+
+            // закрити таблицю
+            table += '</tr></table>';
+
+            elem.innerHTML = table;
+        }
+
+        function getNumberDay(date){
+            var day = date.getDay();
+            if (day == 0) day = 7;
+            return day;
+        }
+
+        createCalendar("calendar", 2015, 11);
+    </script>
+</body>
+</html>

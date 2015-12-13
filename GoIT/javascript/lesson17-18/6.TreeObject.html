@@ -1,0 +1,64 @@
+<!--
+Напишите функцию, которая создаёт вложенный список UL/LI (дерево) из объекта.
+Выберите один из двух способов решения этой задачи:
+
+    Создать строку, а затем присвоить через container.innerHTML.
+    Создавать узлы через методы DOM.
+
+Если получится — сделайте оба.
+
+P.S. Желательно, чтобы в дереве не было лишних элементов,
+в частности — пустых <ul></ul> на нижнем уровне.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id="tree"></div>
+
+<script>
+    var data = {
+        "Рыбы": {
+            "Форель": {},
+            "Щука": {}
+        },
+
+        "Деревья": {
+            "Хвойные": {
+                "Лиственница": {},
+                "Ель": {}
+            },
+            "Цветковые": {
+                "Берёза": {},
+                "Тополь": {}
+            }
+        }
+    };
+    var container = document.getElementById('tree');
+    createTree(container, data); // создаёт
+
+    function createTree(container, obj){
+        container.innerHTML = createTreeText(obj);
+    }
+
+    function createTreeText(obj){
+        var li = '';
+        for(var key in obj){
+            li += '<li>' + key +createTreeText(obj[key]) +'</li>';
+        }
+        if(li){
+            var ul = '<ul>' + li + '</ul>';
+        }
+        return ul || '';
+    }
+
+
+
+</script>
+
+</body>
+</html>
