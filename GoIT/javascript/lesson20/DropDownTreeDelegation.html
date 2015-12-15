@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .tree span:hover{
+            font-weight: bold;
+        }
+        .tree span{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<ul class="tree">
+    <li>Животные
+        <ul>
+            <li>Млекопитающие
+                <ul>
+                    <li>Коровы</li>
+                    <li>Ослы</li>
+                    <li>Собаки</li>
+                    <li>Тигры</li>
+                </ul>
+            </li>
+            <li>Другие
+                <ul>
+                    <li>Змеи</li>
+                    <li>Птицы</li>
+                    <li>Ящерицы</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Рыбы
+        <ul>
+            <li>Аквариумные
+                <ul>
+                    <li>Гуппи</li>
+                    <li>Скалярии</li>
+                </ul>
+
+            </li>
+            <li>Морские
+                <ul>
+                    <li>Морская форель</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    var tree = document.querySelector('.tree');
+    var lis = tree.querySelectorAll('li');
+
+    //створюється span в кожній li
+    for(var i = 0; i < lis.length; i++){
+        var span = document.createElement('span');
+        lis[i].insertBefore(span, lis[i].firstChild);
+        span.appendChild(span.nextSibling);
+    }
+
+    tree.addEventListener('click', hideList);
+
+    function hideList(e){
+        var target = e.target;
+        if(target.tagName != 'SPAN') return;
+
+        var childrenContainer = target.parentNode.getElementsByTagName('ul')[0];
+        if(childrenContainer){
+            childrenContainer.hidden = !childrenContainer.hidden;
+        }
+
+    }
+</script>
+</body>
+</html>

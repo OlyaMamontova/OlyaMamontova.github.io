@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        th {
+            cursor: pointer;
+        }
+
+        th:hover {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<table id="grid">
+    <thead>
+    <tr>
+        <th data-type="number">Возраст</th>
+        <th data-type="string">Имя</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>5</td>
+        <td>Вася</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Петя</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>Женя</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Маша</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Илья</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    var table = document.getElementById('grid');
+
+    table.addEventListener('click', sort);
+
+    function sort(e){
+        var target = e.target;
+        if(target.tagName != 'TH'){
+            return;
+        }
+        var indexNum = target.cellIndex;
+        var type = target.getAttribute('data-type');
+        sortColumn(indexNum, type)();
+    }
+
+    var compare;
+
+    function sortColumn(indexNum, type){
+        var tbody = table.getElementsByTagName('tbody')[0];
+        var rowsArray = [].slice.call(tbody.rows);
+
+        var compare;
+
+        switch (type){
+            case 'number':
+                compare = function(rowA, rowB){
+                    return rowA.cells[indexNum].innerHTML - rowB.cells[indexNum].innerHTML;
+                };
+                break;
+            case 'string':
+                compare = function(rowA, rowB){
+                    return rowA.cells[indexNum].innerHTML > rowB.cells[indexNum].innerHTML;
+                };
+                break;
+        }
+
+        rowsArray.sort(compare);
+
+        for(var i = 0; i < rowsArray.length; i++){
+            tbody.appendChild(rowsArray[i]);
+        }
+        table.appendChild(tbody);
+    }
+</script>
+</body>
+</html>

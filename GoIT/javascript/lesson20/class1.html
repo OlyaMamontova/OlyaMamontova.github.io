@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #link{
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            color: #009;
+            font-size: 15px;
+            border: 1px solid #99f;
+        }
+    </style>
+</head>
+<body>
+<hi>dfhdmn</hi>
+<a id="link" href="#">Link</a>
+<a id="link1" href="#">unsubscribe 1</a>
+<a id="link2" href="#">unsubscribe 2</a>
+
+<script>
+    function getRandomColor(){
+        var letters = '0123456789ABCDEF'.split('');
+        var color = '#';
+        for(var i = 0; i < 6; i++){
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    function onLinkClick1 (){
+        document.body.style.backgroundColor = getRandomColor();
+    }
+
+    function onLinkClick2 (){
+        document.body.style.color = getRandomColor();
+    }
+
+    function onUnsubscribeClick1 (){
+        link.removeEventListener('click', onLinkClick1);
+    }
+    function onUnsubscribeClick2 (){
+        link.removeEventListener('click', onLinkClick2);
+    }
+
+    link.addEventListener('click', onLinkClick1);
+    link.addEventListener('click', onLinkClick2);
+
+    link1.addEventListener('click', onUnsubscribeClick1);
+    link2.addEventListener('click', onUnsubscribeClick2);
+</script>
+</body>
+</html>
