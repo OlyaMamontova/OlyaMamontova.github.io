@@ -1,0 +1,291 @@
+/*Права колонка*/
+.col_right{
+    position: relative;
+    max-width: 1000px;
+    width: 65%;
+    float: right;
+    margin-left: 50px;
+}
+
+.menu_item{
+    position: absolute;
+    width: 100%;
+}
+
+/*menu_1*/
+.menu1_description{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    overflow: hidden;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.menu1_about_me_photo{
+    /*width: 800px;*/
+    /*margin:0 auto;*/
+
+}
+
+.menu1_about_me_photo_wrap{
+    text-align: center;
+}
+
+/*menu_2 menu_3*/
+
+.parts_menu2, .parts_menu3{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.parts_menu2 input[type=radio],
+.parts_menu3 input[type=radio]{
+    display: none;
+}
+
+.parts_menu2 label,
+.parts_menu3 label{
+    display: inline-block;
+    max-width: 330px;
+    width: 30%;
+    height: 110px;
+    margin: 1.25%;
+    background-color: #fff;
+    box-sizing: border-box;
+    color: #4204b2;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.parts_menu2 label{
+     max-width: 330px;
+     width: 22%;
+ }
+.parts_menu2 [id^="menu2_part"]:checked+label,
+.parts_menu3 [id^="menu3_part"]:checked+label{
+    background-color: #4204b2;
+    color: #fff;
+}
+
+.menu2_part_description,
+.menu3_part_description{
+    margin: 50px auto;
+    display: none;
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+}
+
+#menu2_part1:checked ~ .song,
+#menu2_part2:checked ~ .dance,
+#menu2_part3:checked ~ .draw,
+#menu2_part4:checked ~ .swim,
+#menu3_part1:checked ~ .travels,
+#menu3_part2:checked ~ .family,
+#menu3_part3:checked ~ .garden{
+    display: block;
+}
+
+/*.menu _2*/
+
+.menu2_video{
+    max-width: 420px;
+    margin: 30px auto;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+iframe{
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+.slider{
+    margin-bottom:100px;
+}
+
+.slider__images {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    width : 300px;
+    margin: 0 auto;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    /*box-sizing: border-box;*/
+}
+
+.slider__images-wrap {
+    font-size: 0;
+    height: 200px;
+    white-space: nowrap;
+    transition: margin .5s ease-out;
+    cursor: pointer;
+    /*border: 1px solid black;*/
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.slider__navigation {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.slider__pagination {
+    float: right;
+    margin: 6px 0 0;
+    list-style: none;
+}
+
+.slider__pagination li {
+    float: left;
+    margin: 0 1px;
+}
+
+.slider__pagination li a {
+    display: block;
+    float: left;
+    overflow: hidden;
+
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+
+    background-image: url('../img/pagination1.png');
+    background-position: 0 0;
+}
+
+.slider__pagination li a.active,
+.slider__pagination li a:hover.active {
+    background-position: 0 -13px;
+}
+
+.slider__pagination li a:hover {
+    background-position: 0 -26px;
+}
+
+
+/*.menu_3*/
+
+.menu3_part_description{
+    position: relative;
+    /*border: 1px solid blue;*/
+}
+
+.menu3_images_box{
+    text-align: center;
+    margin-top:50px;
+}
+
+.wrapper_image{
+    position: relative;
+    display: inline-block;
+    margin:15px;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+}
+
+.wrapper_image img{
+    vertical-align:middle ;
+}
+
+.menu3_zoom{
+    position: absolute;
+    left:-5px;
+    bottom:-5px;
+    top:-5px;
+    right: -5px;
+    background-color: rgba(66,4,178,0.9 );
+    display: none;
+}
+
+.menu3_zoom span{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-top: -12.5px;
+    margin-left:-12.5px;
+    color: #fff;
+
+    font-size: 50px;
+    font-weight: 200;
+    /*display: none;*/
+}
+
+.wrapper_image:hover .menu3_zoom,
+.wrapper_image:hover span{
+    display: inline-block;
+    cursor: pointer;
+    animation: 1s anm;
+}
+
+@keyframes anm {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+
+.enlarged_images{
+    position: fixed;
+    /*border: 1px solid blue;*/
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(66,4,178,0.6);
+    padding:0;
+    text-align: center;
+    z-index: 100;
+    display: none;
+}
+
+/*.enlarged_images .open .enlarged_images,*/
+/*.enlarged_img .open {*/
+    /*display: block;*/
+/*}*/
+
+.enlarged_img{
+    position: relative;
+    margin: 3% auto 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: none;
+    z-index: 1;
+}
+.enlarged_img img{
+    border:3px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.close_button {
+    position: absolute;
+    top:2%;
+    right:2%;
+    width: 40px;
+    height: 40px;
+    background: rgba(66,4,178,0.8) url("../img/close.png") 50% no-repeat scroll;
+    cursor: pointer;
+    border: none;
+    z-index: 10;
+    /*display: none;*/
+    /*background: transparent none no-repeat */
+}
+.close_button:hover{
+    background:  url("../img/close1.png") 50% no-repeat scroll;;
+}
+
+
+
+

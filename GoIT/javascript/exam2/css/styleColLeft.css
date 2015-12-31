@@ -1,0 +1,147 @@
+body {
+    font: 300 13px/19px "Open Sans",Arial,sans-serif;
+    color: #777;
+    /*background-color: #4C4C4C;*/
+
+}
+
+.bg_overlay{
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg_1{
+    background-image: url("../img/bg/bg1.jpg");
+}
+.bg_2{
+    background-image: url("../img/bg/bg2.jpg");
+}
+.bg_3{
+    background-image: url("../img/bg/bg3.jpg");
+}
+.bg_4{
+    background-image: url("../img/bg/bg4.jpg");
+}
+
+.container{
+    position: relative;
+    max-width: 1600px;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 60px auto;
+}
+
+/* Ліва колонка*/
+.col_left{
+    position: relative;
+    float: left;
+    /*min-width: 300px;*/
+    width: 25%;
+}
+
+.logo_wrapper{
+    position: relative;
+    height: 150px;
+    background-color: #E5E8ED;
+    padding:40px 0;
+    text-align: center;
+    /*border: 1px solid transparent;*/
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 35px;
+}
+
+.menu_wrapper{
+    position: relative;
+    height: 45px;
+    transition: all 1000ms;
+    overflow: hidden;
+}
+.menu{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu_wrapper.open{
+    height: 320px;
+}
+
+.menu li{
+    height: 55px;
+    border-top: 1px solid #C7CDD8;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu li a{
+    display: block;
+    padding: 18px;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.toggle_menu{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 45px;
+    background-color: #4204b2;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #fff;
+    /*transition: all 1000ms;*/
+}
+
+.toggle_menu:hover{
+     border:none;
+ }
+
+.nav-toggle{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+
+.nav-toggle span{
+    position: absolute;
+    top:20px;
+}
+
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+.nav-toggle span:before {
+    top: -10px;
+}
+
+.nav-toggle span:after {
+    bottom: -10px;
+}
+

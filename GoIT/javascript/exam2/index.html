@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<link rel="stylesheet" href="css/font-awesome.min.css"/>-->
+    <link rel="stylesheet" href="css/styleColLeft.css"/>
+    <link rel="stylesheet" href="css/styleColRight.css"/>
+    <link rel="stylesheet" href="css/media-queries.css"/>
+    <script src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body class="bg_overlay bg_1">
+
+    <div class="container">
+        <div class="col_left">
+            <!--<div class="sidebar_menu">-->
+
+                <div class="logo_wrapper">
+                    <h1 class="logo">Solomia</h1>
+                </div>
+                <!--/.logo_wrapper-->
+
+                <div class="menu_wrapper">
+                    <ul class="menu">
+
+                        <li><a class="home" href="#">Хатинка</a></li>
+                        <li><a class="about_me" href="#first_menu">Хто я така</a></li>
+                        <li><a class="talents" href="#second_menu">Що я люблю</a></li>
+                        <li><a class="photos" href="#third_menu">Світлини</a></li>
+                        <li><a class="tralala" href="#">Tralala</a></li>
+                    </ul>
+                    <a class="toggle_menu" href="#">
+                        <!--<a id="nav-toggle" href="#"><span></span></a>-->
+                        <i class="nav-toggle"><span></span></i>
+                    </a>
+                </div>
+                <!--/.menu_wrapper-->
+
+            <!--</div>-->
+            <!--/.sidebar_menu-->
+        </div>
+        <!--/.col_left-->
+
+        <div class="col_right">
+            <div class="menu_item" id="first_menu" data-about_me >
+                <div class="menu1_description">
+                    <h2>Про мене</h2>
+                    <p>Привіт! Мене звати Соломія. Мені вже цілих 6 років! Чому я кажу "цілих"? - Тому що протягом цього часу зі мною відбулося стільки пригод, що вистачило б і на півжиття: я побувала на живих виступах Linkin Park та Red Hot Chili Peppers, каталася на сноуборді та літала на тролей над Дніпром, блукала вуличками Стокгольма і пірнала у Перській затоці... А ще я навчилася малювати, плавати, танцювати та співати, чим залюбки ділюся на сторінках цього сайту. Буду вдячна за ваші перегляди.</p>
+                </div>
+                <!--menu1.description-->
+
+                <div class="menu1_about_me_photo">
+                        <div class="menu1_about_me_photo_wrap">
+                            <img src="img/about_me/about_me_1.png" alt="Photo 1">
+                            <!--<img src="img/about_me/about_me_2.png" alt="Photo 2">-->
+                            <!--<img src="img/about_me/about_me_3.png" alt="Photo 3">-->
+                            <!--<img src="img/about_me/about_me_4.png" alt="Photo 4">-->
+                            <!--<img src="img/about_me/about_me_5.png" alt="Photo 5">-->
+                        </div>
+
+                    <div class="slider__navigation">
+                        <ul class="slider__pagination">
+
+                        </ul>
+                    </div>
+                </div>
+                <!--.slider-->
+
+            </div>
+            <!--.menu_1-->
+
+            <div class="menu_item" id="second_menu" data-talents>
+                <div class="parts_menu2">
+
+                    <input type="radio" name="parts_menu2" id="menu2_part1" checked/>
+                        <label for="menu2_part1">Співаю</label>
+                    <input type="radio" name="parts_menu2" id="menu2_part2"/>
+                        <label for="menu2_part2">Танцюю</label>
+                    <input type="radio" name="parts_menu2" id="menu2_part3"/>
+                        <label for="menu2_part3">Малюю</label>
+                    <input type="radio" name="parts_menu2" id="menu2_part4"/>
+                        <label for="menu2_part4">Плаваю</label>
+
+                    <div class="menu2_part_description song">
+                        <div class="menu2_video">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/N1dHCXtDsng" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="menu2_video">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/cg1XpHzINEE" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                           </div>
+                    <div class="menu2_part_description dance">
+                        <div class="menu2_video">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/knrhXeS0gYA" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="menu2_part_description draw">
+
+                        <div class="slider">
+                            <div class="slider__images">
+                                <div class="slider__images-wrap">
+                                    <img src="img/picture/picture1.png" alt="Photo 1">
+                                    <img src="img/picture/picture2.png" alt="Photo 2">
+                                    <img src="img/picture/picture3.png" alt="Photo 3">
+                                    <img src="img/picture/picture4.png" alt="Photo 4">
+                                </div>
+                            </div>
+
+                            <div class="slider__navigation">
+                                <ul class="slider__pagination">
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!--.slider-->
+
+                    </div>
+                    <div class="menu2_part_description swim">
+                        <div class="menu2_video">
+                        <iframe width="420" height="315" src="https://www.youtube.com/embed/A2SO17thZDw" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!--.parts_menu2-->
+
+            </div>
+            <!--.menu_2-->
+
+            <div class="menu_item" id="third_menu" data-photos>
+                <div class="parts_menu3">
+                    <input type="radio" name="parts_menu3" id="menu3_part1" checked/>
+                        <label for="menu3_part1">Подорожі</label>
+                    <input type="radio" name="parts_menu3" id="menu3_part2"/>
+                        <label for="menu3_part2">Сім'я</label>
+                    <input type="radio" name="parts_menu3" id="menu3_part3"/>
+                        <label for="menu3_part3">Садочок</label>
+
+                    <div class="menu3_part_description travels">
+                        <div class="menu3_images_box">
+                            <div class="wrapper_image">
+                                <img src="img/travel/travel1.png" alt="Photo 1"/>
+                                <a class="menu3_zoom" href="#travel_img_1"><span>+</span></a>
+
+                            </div>
+                            <!--.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/travel/travel2.png" alt="Photo 2"/>
+                                <a class="menu3_zoom" href="#travel_img_2"><span>+</span></a>
+
+                            </div>
+                            <!--.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/travel/travel3.png" alt="Photo 3"/>
+                                <a class="menu3_zoom" href="#travel_img_3"><span>+</span></a>
+
+                            </div>
+                            <!--.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/travel/travel4.png" alt="Photo 4"/>
+                                <a class="menu3_zoom" href="#travel_img_4"><span>+</span></a>
+
+                            </div>
+                            <!--.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/travel/travel5.png" alt="Photo 5"/>
+                                <a class="menu3_zoom" href="#travel_img_5"><span>+</span></a>
+
+                            </div>
+                            <!--.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/travel/travel6.png" alt="Photo 6"/>
+                                <a class="menu3_zoom" href="#travel_img_6"><span>+</span></a>
+
+                            </div>
+                            <!--.wrapper_image-->
+                        </div>
+                        <!--.menu3_images_box"-->
+
+
+
+                    </div>
+                    <!--.menu3_part_description travels-->
+
+                    <div class="menu3_part_description family">
+                        <div class="menu3_images_box">
+                            <div class="wrapper_image">
+                                <img src="img/family/family1.png" alt="Photo 1"/>
+                                <a class="menu3_zoom" href="#family_img_1"><span>+</span></a>
+
+                            </div>
+                            <!--.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/family/family2.png" alt="Photo 2"/>
+                                <a class="menu3_zoom" href="#family_img_2"><span>+</span></a>
+
+                            </div>
+                            <!--.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/family/family3.png" alt="Photo 3"/>
+                                <a class="menu3_zoom" href="#family_img_3"><span>+</span></a>
+
+                            </div>
+                            <!--.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/family/family4.png" alt="Photo 4"/>
+                                <a class="menu3_zoom" href="#family_img_4"><span>+</span></a>
+
+                            </div>
+                            <!--.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/family/family5.png" alt="Photo 5"/>
+                                <a class="menu3_zoom" href="#family_img_5"><span>+</span></a>
+
+                            </div>
+                            <!--.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/family/family6.png" alt="Photo 6"/>
+                                <a class="menu3_zoom" href="#family_img_6"><span>+</span></a>
+
+                            </div>
+                            <!--/.wrapper_image-->
+                        </div>
+                        <!--/.menu3_images_box"-->
+                    </div>
+                    <div class="menu3_part_description garden">
+                        <div class="menu3_images_box">
+                            <div class="wrapper_image">
+                                <img src="img/festival/festival1.png" alt="Photo 1"/>
+                                <a class="menu3_zoom" href="#garden_img_1"><span>+</span></a>
+
+                            </div>
+                            <!--/.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/festival/festival2.png" alt="Photo 2"/>
+                                <a class="menu3_zoom" href="#garden_img_2"><span>+</span></a>
+
+                            </div>
+                            <!--/.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/festival/festival3.png" alt="Photo 3"/>
+                                <a class="menu3_zoom" href="#garden_img_3"><span>+</span></a>
+
+                            </div>
+                            <!--/.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/festival/festival4.png" alt="Photo 4"/>
+                                <a class="menu3_zoom" href="#garden_img_4"><span>+</span></a>
+
+                            </div>
+                            <!--/.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/festival/festival5.png" alt="Photo 5"/>
+                                <a class="menu3_zoom" href="#garden_img_5"><span>+</span></a>
+
+                            </div>
+                            <!--/.wrapper_image-->
+
+                            <div class="wrapper_image">
+                                <img src="img/festival/festival6.png" alt="Photo 6"/>
+                                <a class="menu3_zoom" href="#garden_img_6"><span>+</span></a>
+
+                            </div>
+                            <!--/.wrapper_image-->
+                        </div>
+                        <!--/.menu3_images_box"-->
+                    </div>
+                </div>
+                <!--/.parts_menu3-->
+
+            </div>
+            <!--/.menu_3-->
+
+        </div>
+        <!--/.col_right-->
+
+
+    </div>
+    <!--/.container-->
+
+    <div class="enlarged_images">
+        <button class="close_button"></button>
+        <div class="enlarged_img" id="travel_img_1">
+            <img  src="img/travel/travel1_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="travel_img_2">
+            <img  src="img/travel/travel2_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="travel_img_3">
+            <img  src="img/travel/travel3_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="travel_img_4">
+            <img  src="img/travel/travel4_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="travel_img_5">
+            <img  src="img/travel/travel5_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="travel_img_6">
+            <img  src="img/travel/travel6_enlarged.png" />
+        </div>
+
+
+        <div class="enlarged_img" id="family_img_1">
+            <img  src="img/family/family1_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="family_img_2">
+            <img  src="img/family/family2_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="family_img_3">
+            <img  src="img/family/family3_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="family_img_4">
+            <img  src="img/family/family4_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="family_img_5">
+            <img  src="img/family/family5_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="family_img_6">
+            <img  src="img/family/family6_enlarged.png" />
+        </div>
+
+
+        <div class="enlarged_img" id="garden_img_1">
+            <img  src="img/festival/festival1_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="garden_img_2">
+            <img  src="img/festival/festival2_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="garden_img_3">
+            <img  src="img/festival/festival3_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="garden_img_4">
+            <img  src="img/festival/festival4_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="garden_img_5">
+            <img  src="img/festival/festival5_enlarged.png" />
+        </div>
+
+        <div class="enlarged_img" id="garden_img_6">
+            <img  src="img/festival/festival6_enlarged.png" />
+        </div>
+
+
+    </div>
+
+
+    <script src="js/menuLeft.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/menu_1.js"></script>
+
+</body>
+</html>
