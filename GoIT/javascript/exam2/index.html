@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/media-queries.css"/>
     <script src="js/jquery-1.11.3.min.js"></script>
 </head>
-<body class="bg_overlay bg_1">
+<body class="bg_1">
 
     <div class="container">
         <div class="col_left">
@@ -30,7 +30,6 @@
                         <li><a class="tralala" href="#">Tralala</a></li>
                     </ul>
                     <a class="toggle_menu" href="#">
-                        <!--<a id="nav-toggle" href="#"><span></span></a>-->
                         <i class="nav-toggle"><span></span></i>
                     </a>
                 </div>
@@ -50,21 +49,40 @@
                 <!--menu1.description-->
 
                 <div class="menu1_about_me_photo">
-                        <div class="menu1_about_me_photo_wrap">
-                            <img src="img/about_me/about_me_1.png" alt="Photo 1">
-                            <!--<img src="img/about_me/about_me_2.png" alt="Photo 2">-->
-                            <!--<img src="img/about_me/about_me_3.png" alt="Photo 3">-->
-                            <!--<img src="img/about_me/about_me_4.png" alt="Photo 4">-->
-                            <!--<img src="img/about_me/about_me_5.png" alt="Photo 5">-->
+                        <div class="menu1_about_me_photo_wrap" id="about_me_photo_1">
+                            <img src="img/about_me/about_me_1.png"  alt="Photo 1">
+                            <a class="switch_photo prev_photo" href="#about_me_photo_5"></a>
+                            <a class="switch_photo next_photo" href="#about_me_photo_2"></a>
+                        </div>
+                        <div class="menu1_about_me_photo_wrap" id="about_me_photo_2">
+                            <img src="img/about_me/about_me_2.png"  alt="Photo 2">
+                            <a class="switch_photo prev_photo" href="#about_me_photo_1"></a>
+                            <a class="switch_photo next_photo" href="#about_me_photo_3"></a>
+                        </div>
+                        <div class="menu1_about_me_photo_wrap" id="about_me_photo_3">
+                            <img src="img/about_me/about_me_3.png"  alt="Photo 3">
+                            <a class="switch_photo prev_photo" href="#about_me_photo_2"></a>
+                            <a class="switch_photo next_photo" href="#about_me_photo_4"></a>
+                        </div>
+                        <div class="menu1_about_me_photo_wrap" id="about_me_photo_4">
+                            <img src="img/about_me/about_me_4.png" alt="Photo 4">
+                            <a class="switch_photo prev_photo" href="#about_me_photo_3"></a>
+                            <a class="switch_photo next_photo" href="#about_me_photo_5"></a>
+                        </div>
+                        <div class="menu1_about_me_photo_wrap" id="about_me_photo_5">
+                            <img src="img/about_me/about_me_5.png"  alt="Photo 5">
+                            <a class="switch_photo prev_photo" href="#about_me_photo_4"></a>
+                            <a class="switch_photo next_photo" href="#about_me_photo_1"></a>
                         </div>
 
-                    <div class="slider__navigation">
-                        <ul class="slider__pagination">
 
-                        </ul>
-                    </div>
+                    <!--<div class="photo__navigation">-->
+                        <!--<ul class="photo__pagination">-->
+
+                        <!--</ul>-->
+                    <!--</div>-->
                 </div>
-                <!--.slider-->
+                <!--.menu1_about_me_photo-->
 
             </div>
             <!--.menu_1-->
@@ -96,25 +114,27 @@
                     </div>
                     <div class="menu2_part_description draw">
 
-                        <div class="slider">
-                            <div class="slider__images">
-                                <div class="slider__images-wrap">
-                                    <img src="img/picture/picture1.png" alt="Photo 1">
-                                    <img src="img/picture/picture2.png" alt="Photo 2">
-                                    <img src="img/picture/picture3.png" alt="Photo 3">
-                                    <img src="img/picture/picture4.png" alt="Photo 4">
-                                </div>
-                            </div>
+                        <!--<div class="slider">-->
+                            <!--<div class="slider__images">-->
+                                <!--<div class="slider__images-wrap">-->
+                                    <!--<img src="img/picture/picture1.png" alt="Photo 1">-->
+                                    <!--<img src="img/picture/picture2.png" alt="Photo 2">-->
+                                    <!--<img src="img/picture/picture3.png" alt="Photo 3">-->
+                                    <!--<img src="img/picture/picture4.png" alt="Photo 4">-->
+                                <!--</div>-->
+                            <!--</div>-->
 
-                            <div class="slider__navigation">
-                                <ul class="slider__pagination">
+                            <!--<div class="slider__navigation">-->
+                                <!--<ul class="slider__pagination">-->
 
-                                </ul>
-                            </div>
-                        </div>
-                        <!--.slider-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;.slider&ndash;&gt;-->
 
                     </div>
+
+
                     <div class="menu2_part_description swim">
                         <div class="menu2_video">
                         <iframe width="420" height="315" src="https://www.youtube.com/embed/A2SO17thZDw" frameborder="0" allowfullscreen></iframe>
@@ -291,6 +311,7 @@
     </div>
     <!--/.container-->
 
+
     <div class="enlarged_images">
         <button class="close_button"></button>
         <div class="enlarged_img" id="travel_img_1">
@@ -369,6 +390,7 @@
 
 
     </div>
+    <!--.enlarged_images-->
 
 
     <script src="js/menuLeft.js"></script>
