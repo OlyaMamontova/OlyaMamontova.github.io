@@ -1,10 +1,10 @@
 
-
 //right column
 $(document).ready(function () {
 
     var tabContainers = $('.menu_item'); // получаем массив контейнеров
-    $('ul.menu a').click(function () {
+    $('ul.menu a').click(function (e) {
+        e.preventDefault();
         tabContainers.hide(); // прячем все табы
         tabContainers.filter(this.hash).show(); // показываем содержимое текущего
         return false;
@@ -15,7 +15,8 @@ $(document).ready(function () {
 $(document).ready(function(){
     var photos = $('.menu1_about_me_photo_wrap');
     photos.hide().filter(':first').show();
-    $('.switch_photo').click(function(){
+    $('.switch_photo').click(function(e){
+        e.preventDefault();
         photos.hide();
         photos.filter(this.hash).show();
         return false;
@@ -25,7 +26,8 @@ $(document).ready(function(){
 //show enlarged images
 $(document).ready(function(){
     var photos = $('.enlarged_img');
-    $('.menu3_zoom').click(function(){
+    $('.menu3_zoom').click(function(e){
+        e.preventDefault();
         photos.hide();
         $('.enlarged_images').show();
         photos.filter(this.hash).show();
@@ -35,8 +37,10 @@ $(document).ready(function(){
 
 //hide enlarged images
 $(document).ready(function(){
-    $('.close_button').click(function(){
+    $('.close_button').click(function(e){
+        e.preventDefault();
         $('.enlarged_images').hide();
     });
 });
+
 
