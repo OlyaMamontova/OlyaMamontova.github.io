@@ -38,6 +38,7 @@
     background-color: #fff;
     max-width: 400px;
     max-height: 600px;
+    box-sizing: border-box;
 }
 
 .menu1_about_me_photo_wrap img{
