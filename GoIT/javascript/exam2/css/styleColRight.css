@@ -1,4 +1,4 @@
-/*Права колонка*/
+
 .col_right{
     position: relative;
     max-width: 1000px;
@@ -20,14 +20,25 @@ img{
 
 /*menu_1*/
 .menu1_description{
+    font-family: "CafeParisC";
+    font-size: 2.6em;
+    line-height: 1;
     width: 100%;
     background-color: #fff;
     border-radius: 10px;
     margin-bottom: 30px;
     text-align: center;
     overflow: hidden;
-    padding: 30px;
+    padding: 15px;
     box-sizing: border-box;
+}
+
+.menu1_description h2{
+    margin: 0;
+    color: #4204b2;
+}
+.menu1_description p{
+    margin: 0;
 }
 
 .menu1_about_me_photo{
@@ -39,7 +50,8 @@ img{
 
 .menu1_about_me_photo_wrap{
     position: relative;
-    border: 3px solid #fff;
+    border: 10px solid #fff;
+    border-radius: 10px;
     background-color: #fff;
     max-width: 400px;
     max-height: 600px;
@@ -49,22 +61,41 @@ img{
 .menu1_about_me_photo_wrap img{
     vertical-align: middle;
 }
-
-.next_photo{
+.switch_photo{
     position: absolute;
     top:0;
+    bottom: 0;
+    width: 50%;
+}
+
+.switch_photo.next_photo{
     right: 0;
-    bottom: 0;
-    width: 50%;
 }
 
-.prev_photo{
-    position: absolute;
-    top:0;
+.switch_photo.prev_photo{
     left: 0;
-    bottom: 0;
-    width: 50%;
 }
+
+.switch_photo:hover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    background: url("../img/arrows.png") no-repeat;
+    width: 32px;
+    height: 49px;
+}
+
+.next_photo:hover::before  {
+    right: 5%;
+    background-position:-32px 0;
+}
+
+.prev_photo:hover::before{
+    left: 5%;
+    background-position:0 0;
+}
+
+
 
 /*menu_2 menu_3*/
 
@@ -83,11 +114,16 @@ img{
 
 .parts_menu2 label,
 .parts_menu3 label{
+    font-family: "CafeParisC";
     display: inline-block;
+    text-transform: uppercase;
     max-width: 330px;
     width: 30%;
     height: 110px;
     margin: 1.25%;
+    padding-top: 40px;
+    font-size: 1.5em;
+    font-weight: 600;
     background-color: #fff;
     box-sizing: border-box;
     color: #4204b2;
@@ -110,7 +146,7 @@ img{
     margin: 50px auto;
     display: none;
     color: #000;
-    font-size: 20px;
+    /*font-size: 20px;*/
     text-align: center;
 }
 
@@ -143,7 +179,6 @@ iframe{
 
 .menu3_part_description{
     position: relative;
-    /*border: 1px solid blue;*/
 }
 
 .menu3_images_box{
@@ -183,14 +218,13 @@ iframe{
 
     font-size: 50px;
     font-weight: 200;
-    /*display: none;*/
 }
 
 .wrapper_image:hover .menu3_zoom,
 .wrapper_image:hover span{
     display: inline-block;
     cursor: pointer;
-    animation: 1s anm;
+    animation: 0.5s anm;
 }
 
 @keyframes anm {
@@ -201,7 +235,6 @@ to {opacity: 1;}
 
 .enlarged_images{
     position: fixed;
-    /*border: 1px solid blue;*/
     top:0;
     right: 0;
     bottom: 0;
