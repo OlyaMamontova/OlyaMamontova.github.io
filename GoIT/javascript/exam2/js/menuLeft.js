@@ -43,3 +43,34 @@ function openOrCloseMenu(){
     menuWrapper.classList.toggle('open');
 }
 
+//show picture
+var showingPicture;
+document.onmouseover = function(e){
+    var target = e.target;
+
+    var tooltip = target.getAttribute('data-tooltip');
+    if(!tooltip) return;
+    //alert(target);
+    var bigPicture = target.nextElementSibling;
+    var coords = target.getBoundingClientRect();
+    var left = coords.left - target.offsetWidth*2;
+    //alert(bigPicture.offsetWidth);
+
+    if (left < 0) left = 0; // не вилазити за ліву межу вікна
+
+    var top = coords.top - target.offsetHeight*2;
+    if (top < 0) { // не вилазити за верхню межу вікна
+        top = 0;
+    }
+    bigPicture.style.left = left + 'px';
+    bigPicture.style.top = top + 'px';
+    bigPicture.style.display = 'block';
+    showingPicture = bigPicture;
+};
+
+document.onmouseout = function(e){
+    if(showingPicture){
+        showingPicture.style.display = 'none';
+        showingPicture = null;
+    }
+};

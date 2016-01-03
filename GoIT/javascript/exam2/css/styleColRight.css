@@ -174,6 +174,25 @@ iframe{
     vertical-align: middle;
 }
 
+.picture_wrap{
+    position: relative;
+    max-width: 610px;
+    margin: 0 auto;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.picture_wrap img{
+    vertical-align: middle;
+    margin: 3px 0;
+}
+.big{
+    position: fixed;
+    z-index: 200;
+    display: none;
+    border: 5px solid #4204b2;
+}
 
 /*.menu_3*/
 
