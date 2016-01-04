@@ -49,7 +49,7 @@ var showingPicture;
 document.onmouseover = function(e){
     var target = e.target;
 
-    var picture = target.getAttribute('picture');
+    var picture = target.getAttribute('data-picture');
     if(!picture) return;
 
     var bigPicture = target.nextElementSibling;
