@@ -4,6 +4,7 @@
     }
 
     .col_left{
+        position:relative ;
         width: 100%;
     }
 
@@ -61,5 +62,10 @@
         width: 270px;
     }
 
+}
 
+@media screen and (max-height: 530px){
+    .col_left {
+        position: relative;
+    }
 }

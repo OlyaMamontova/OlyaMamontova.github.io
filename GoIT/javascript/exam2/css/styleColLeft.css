@@ -44,7 +44,7 @@ body {
 
 
 .col_left{
-    position: relative;
+    position: fixed;
     float: left;
     width: 25%;
 }
