@@ -43,19 +43,18 @@ function openOrCloseMenu(){
     menuWrapper.classList.toggle('open');
 }
 
+
 //show picture
 var showingPicture;
 document.onmouseover = function(e){
     var target = e.target;
 
-    var tooltip = target.getAttribute('data-tooltip');
-    if(!tooltip) return;
-    //alert(target);
+    var picture = target.getAttribute('picture');
+    if(!picture) return;
+
     var bigPicture = target.nextElementSibling;
     var coords = target.getBoundingClientRect();
     var left = coords.left - target.offsetWidth*2;
-    //alert(bigPicture.offsetWidth);
-
     if (left < 0) left = 0; // не вилазити за ліву межу вікна
 
     var top = coords.top - target.offsetHeight*2;
@@ -74,3 +73,4 @@ document.onmouseout = function(e){
         showingPicture = null;
     }
 };
+

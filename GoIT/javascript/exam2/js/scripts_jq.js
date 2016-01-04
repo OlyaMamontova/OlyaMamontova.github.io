@@ -2,11 +2,11 @@
 //right column
 $(document).ready(function () {
 
-    var tabContainers = $('.menu_item'); // РїРѕР»СѓС‡Р°РµРј РјР°СЃСЃРёРІ РєРѕРЅС‚РµР№РЅРµСЂРѕРІ
+    var tabContainers = $('.menu_item'); // получаем массив контейнеров
     $('ul.menu a').click(function (e) {
         e.preventDefault();
-        tabContainers.hide(); // РїСЂСЏС‡РµРј РІСЃРµ С‚Р°Р±С‹
-        tabContainers.filter(this.hash).show(); // РїРѕРєР°Р·С‹РІР°РµРј СЃРѕРґРµСЂР¶РёРјРѕРµ С‚РµРєСѓС‰РµРіРѕ
+        tabContainers.hide(); // прячем все табы
+        tabContainers.filter(this.hash).show(); // показываем содержимое текущего
         return false;
     }).filter(':first').click();
 });
@@ -42,5 +42,4 @@ $(document).ready(function(){
         $('.enlarged_images').hide();
     });
 });
-
 

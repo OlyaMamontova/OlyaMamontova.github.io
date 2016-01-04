@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/styleColLeft.css"/>
     <link rel="stylesheet" href="css/styleColRight.css"/>
     <link rel="stylesheet" href="css/media-queries.css"/>
-
     <script src="js/jquery-1.11.3.min.js"></script>
 
 </head>
@@ -31,7 +30,7 @@
                     <li><a class="about_me" href="#first_menu">Хто я така</a></li>
                     <li><a class="talents" href="#second_menu">Що я люблю</a></li>
                     <li><a class="photos" href="#third_menu">Світлини</a></li>
-                    <li><a class="tralala" href="#">Kovbasa</a></li>
+                    <li><a class="write_me" href="#fourth_menu">Написати мені</a></li>
                 </ul>
 
                 <a class="toggle_menu" href="#">
@@ -44,10 +43,10 @@
         <!--/.col_left-->
 
         <div class="col_right">
-            <div class="menu_item" id="first_menu" data-about_me >
+            <div class="menu_item" id="first_menu">
                 <div class="menu1_description">
                     <h2>Про мене</h2>
-                    <p>Привіт! Мене звати Соломія. Мені вже цілих 6 років! Чому я кажу "цілих"? - Тому що протягом цього часу зі мною відбулося стільки пригод, що вистачило б і на півжиття: я побувала на живих виступах Linkin Park та Red Hot Chili Peppers, каталася на сноуборді та літала на тролей над Дніпром, блукала вуличками Стокгольма і пірнала у Перській затоці... А ще я навчилася малювати, плавати, танцювати та співати, чим залюбки ділюся на сторінках цього сайту. Буду вдячна за ваші перегляди.</p>
+                    <p>Привіт! Мене звати Соломія. Мені вже цілих 6 років! Чому я кажу "цілих"? - Тому що протягом цього часу зі мною відбулося стільки пригод, що вистачило б і на півжиття: я побувала на живих виступах Linkin Park та Red Hot Chili Peppers, каталася на сноуборді та літала на тролей над Дніпром, блукала вуличками Стокгольма та пірнала у Перській затоці і разів 118 передивилася мультик "Крижане серце"... А ще я навчилася малювати, плавати, танцювати та співати, чим залюбки ділюся на сторінках цього сайту. Буду вдячна за ваші перегляди.</p>
                 </div>
                 <!--menu1.description-->
 
@@ -83,7 +82,7 @@
             </div>
             <!--#first_menu-->
 
-            <div class="menu_item" id="second_menu" data-talents>
+            <div class="menu_item" id="second_menu">
                 <div class="parts_menu2">
 
                     <input type="radio" name="parts_menu2" id="menu2_part1" checked/>
@@ -111,16 +110,15 @@
                     <div class="menu2_part_description draw">
 
                         <div class="picture_wrap">
-                            <img src="img/picture/picture1.png" alt="Photo 1" data-tooltip=" ">
-                            <img class="big" src="img/picture/picture1_big.png" alt="Photo 1">
-                            <img src="img/picture/picture2.png" alt="Photo 2" data-tooltip=" ">
-                            <img class="big" src="img/picture/picture2_big.png" alt="Photo 2" >
-                            <img src="img/picture/picture3.png" alt="Photo 3" data-tooltip=" ">
-                            <img class="big" src="img/picture/picture3_big.png" alt="Photo 3" >
-                            <img src="img/picture/picture4.png" alt="Photo 4" data-tooltip=" ">
-                            <img class="big" src="img/picture/picture4_big.png" alt="Photo 4" >
+                            <img src="img/picture/picture1.png" alt="Photo 1" data-picture=" ">
+                            <img class="big_picture" src="img/picture/picture1_big.png" alt="Photo 1">
+                            <img src="img/picture/picture2.png" alt="Photo 2" data-picture=" ">
+                            <img class="big_picture" src="img/picture/picture2_big.png" alt="Photo 2" >
+                            <img src="img/picture/picture3.png" alt="Photo 3" data-picture=" ">
+                            <img class="big_picture" src="img/picture/picture3_big.png" alt="Photo 3" >
+                            <img src="img/picture/picture4.png" alt="Photo 4" data-picture=" ">
+                            <img class="big_picture" src="img/picture/picture4_big.png" alt="Photo 4" >
                         </div>
-
                     </div>
 
 
@@ -135,7 +133,7 @@
             </div>
             <!--second_menu-->
 
-            <div class="menu_item" id="third_menu" data-photos>
+            <div class="menu_item" id="third_menu">
                 <div class="parts_menu3">
                     <input type="radio" name="parts_menu3" id="menu3_part1" checked/>
                         <label for="menu3_part1">Подорожі</label>
@@ -189,8 +187,6 @@
                             <!--.wrapper_image-->
                         </div>
                         <!--.menu3_images_box"-->
-
-
 
                     </div>
                     <!--.menu3_part_description travels-->
@@ -287,11 +283,24 @@
                         </div>
                         <!--/.menu3_images_box"-->
                     </div>
+                    <!--.garden-->
                 </div>
                 <!--/.parts_menu3-->
 
             </div>
             <!--/#third_menu-->
+
+            <div class="menu_item" id="fourth_menu">
+
+                <form class="send_message" action="">
+                    <p class="fourth_menu_text"><b>Щоб залишити ваше повідомлення, напишіть його у цьому віконечку і натисніть "надіслати".
+                        Я обов'язково перегляну та відповім:</b></p>
+                    <p class="message"><textarea name="message" rows="10" ></textarea></p>
+                    <p><input class="submit" type="submit"></p>
+                </form>
+
+            </div>
+            <!--#fourth_menu-->
 
         </div>
         <!--/.col_right-->
@@ -381,8 +390,10 @@
     </div>
     <!--.enlarged_images-->
 
-    <script src="js/menuLeft.js"></script>
-    <script src="js/tabs.js"></script>
+
+
+    <script src="js/scripts.js"></script>
+    <script src="js/scripts_jq.js"></script>
 
 </body>
 </html>

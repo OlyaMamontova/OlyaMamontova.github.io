@@ -5,7 +5,6 @@
 
     .col_left{
         width: 100%;
-        /*max-width: 800px;*/
     }
 
     .col_right{
@@ -14,9 +13,30 @@
         margin: 50px 0;
     }
 
-    .big{
+    .big_picture{
         display: none !important;
     }
+
+    .menu_wrapper{
+        height: 85px;
+    }
+
+    .menu_wrapper.open{
+        height: 410px;
+    }
+
+    .menu li {
+        height: 65px;
+    }
+
+    .toggle_menu{
+        height: 85px;
+    }
+
+    .nav-toggle span{
+        top:40px;
+    }
+
 }
 
 @media screen and (max-width: 650px){
@@ -40,4 +60,6 @@
     .slider__navigation{
         width: 270px;
     }
+
+
 }
