@@ -1,9 +1,10 @@
 // background
 var total_pics_num = 4; // кількість зображень
 var interval = 6000;    // затримка між зображеннями
-var time_out = 0.5;     // затримка зміни зображень
+var time_out = 1;     // затримка зміни зображень
 var i = 0;
 var timeout;
+var timerInterval;
 var opacity = 100;
 function fade_to_next() {
     opacity--;
@@ -21,12 +22,19 @@ function fade_to_next() {
         clearTimeout(timeout);
     }
 }
-setTimeout (function go() {
-    i++;
-    if (i > total_pics_num) i=1;
-    fade_to_next();
-    setTimeout(go, interval);
-}, interval);
+window.onfocus = function(){
+    timerInterval = setTimeout (function go() {
+        i++;
+        if (i > total_pics_num) i=1;
+        fade_to_next();
+        timerInterval = setTimeout(go, interval);
+    }, interval);
+
+
+};
+window.onblur = function(){
+    clearTimeout(timerInterval);
+};
 
 
 
