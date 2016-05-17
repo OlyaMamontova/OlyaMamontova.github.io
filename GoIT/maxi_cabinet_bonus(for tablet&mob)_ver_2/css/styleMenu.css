@@ -304,7 +304,7 @@ a:active, a:hover {
     }
 
 }
-@media (max-width: 950px) {
+@media (max-width: 1020px) {
     .wraperMenu .b-mainMenu .controls {
         display: none;
     }
