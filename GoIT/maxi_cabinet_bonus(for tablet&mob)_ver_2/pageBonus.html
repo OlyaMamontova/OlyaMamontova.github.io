@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+    <meta name="viewport" content="width=800">
+    <title>Page bonus</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styleMenu.css"/>
+    <link rel="stylesheet" href="css/styleSidebar.css"/>
+    <link rel="stylesheet" href="css/styleCommon.css"/>
+    <link rel="stylesheet" href="css/styleForBonus.css">
+</head>
+<body>
+
+<div data-filename="menu" class="wraperMenu file">
+    <div class="b-mainMenu">
+        <div class="wraper"><a href="/" class="logo menuHover">
+            <img src="img/logo-e6b30f0e69.png" alt="logo"/></a>
+
+            <div class="controls"><a href="tel:0800503036" class="tel">0 800 503 036</a><span class="b-language"><a href="/" class="language activeLanguage">UA</a><a href="ru/" class="language">RU</a></span><a class="cabinet">ОСОБИСТИЙ КАБІНЕТ</a><span class="wraperButton"><a href="/get_card" class="menuButton">ХОЧУ КАРТКУ MAXI!</a></span></div>
+            <div class="iconMobileMenu"></div>
+        </div>
+        <menu class="mainMenu">
+            <li class="elMenu menuHover"><a href="/">Головна</a>
+            </li>
+            <li class="elMenu menuHover"><a href="/maxi">Що таке MAXI CARD</a>
+            </li>
+            <li class="elMenu menuHover"><a href="/partners">MAXI партнери</a>
+            </li>
+            <li class="elMenu menuHover"><a href="/news">Новини та акції</a>
+            </li>
+            <li class="elMenu menuHover"><a href="/comanda">Наша команда</a>
+            </li>
+            <li class="elMenu menuHover">
+                <a href="/new_partner">
+                    Стати партнером                    </a>
+            </li>
+            <li class="elMenu menuHover"><a href="/contacts">Контакти</a>
+            </li>
+        </menu>
+    </div>
+    <menu class="mobileMenu">
+        <div class="controls">
+            <div class="close"></div>
+            <div class="labguages">
+                <li class="elMenu menuHover activeLanguage"><a href="/" class="language activeLanguage">UA</a>
+                </li>
+                <li class="elMenu menuHover"><a href="ru/" class="language">RU</a></li>
+            </div>
+        </div>
+        <div class="wraper">
+            <li class="elMenu menuHover"><a href="/">Головна</a>
+            </li>
+            <li class="elMenu menuHover"><a href="/maxi">Що таке MAXI CARD</a>
+            </li>
+            <li class="elMenu menuHover"><a href="/partners">MAXI партнери</a>
+            </li>
+            <li class="elMenu menuHover"><a href="/news">Новини та акції</a>
+            </li>
+            <li class="elMenu menuHover"><a href="/comanda">Наша команда</a>
+            </li>
+            <li class="elMenu menuHover">
+                <a href="/new_partner">
+                    Стати партнером                    </a>
+            </li>
+            <li class="elMenu menuHover"><a href="/contacts">Контакти</a>
+            </li>
+        </div>
+    </menu>
+</div>
+
+<div class="page">
+
+        <div class="sidebar">
+            <div class="sidebar__head">
+                <h2>Особистий кабінет</h2>
+                <h2>власника картки MAXI</h2>
+                <img class="sidebar__logo" src="img/sidebar__logo.png" alt="Особистий кабінет">
+            </div>
+            <ul class="sidebar__menu">
+                <li class="sidebar__item"><a class="sidebar__link" href="#">Інформація по картці MAXI</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#">Історія транзакцій</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#">Керування картками MAXI</a></li>
+                <li class="sidebar__item"><a class="sidebar__link sidebar__link-active" href="#">Переказ з картки на картку</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#">Анкетні дані</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#">Замовлення картки</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#">Контакт центр</a></li>
+            </ul>
+        </div>
+
+
+        <div class="main transfer">
+            <div class="main__head">
+                <img class="main__icon" src="img/bonus.svg" alt="transfer">
+                <div class="main__text">
+                    <h1 class="main__h1">Переказ з картки на картку</h1>
+                    <p class="main__p">В цьому розділі особистого кабінету Ви можете перераховувати бонуси
+                        з однієї картки MAXI на іншу</p>
+                </div>
+            </div>
+            <div class="main__content">
+
+                <form  action="/" method="post">
+                    <div class="clearfix">
+                    <div class="wrapper-card">
+                        <p class="wrapper-card_title">Відправник</p>
+                        <div class="wrapper-card_card">
+                            <p class="card_text">Оберіть картку з якої хочете відправити бонуси</p>
+
+                            <select name="cards-sender" id="">
+                                <option value="">4466 **** **** 1207</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-amount">
+
+                        <!--ПОМИЛКА. При помилці задати стиль .error{visibility: visible;}-->
+                        <p class="error">Сума перевищує загальний баланс</p>
+                        <!------->
+
+                        <div class="amount_enter">
+                            <label for="entered-amount">Введіть суму:
+                                <!-- При помилці додати тегу input клас class="amount-error"-->
+                                <input id="entered-amount" type="text"/>
+                            </label>
+                        </div>
+
+
+                        <span class="amount_bonuses">
+                            <span class="amount_bonuses_text">Всі бонуси:</span>
+                            <span class="amount_bonuses_total">12,87</span> грн
+                        </span>
+
+                    </div>
+
+                    <div class="wrapper-card">
+                        <p class="wrapper-card_title">Одержувач</p>
+                        <div class="wrapper-card_card">
+                            <p class="card_text">Оберіть картку на яку хочете відправити бонуси</p>
+
+                            <select name="cards-recipient" id="">
+                                <option value="">4466 **** **** 1456</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- При успішному переказі додати клас hide-->
+                    <div class="button-save">
+                        <input  type="submit" value="Виконати переказ"/>
+                    </div>
+
+                    <!-- При успішному переказі додати клас show, прибрати клас hide-->
+                    <div class="successful-transfer hide">
+                        <img src="img/save.svg" alt=""/>
+                        Переказ успішно здійснений!
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+</div>
+
+<script src="js/dom_func-2a336abf73.js"></script>
+<script src="js/menu-dc05f300fe.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+.main.transfer{
+    padding-top: 58px;
+}
+.transfer .main__head {
+    max-width: 720px;
+}
+.transfer .main__icon {
+    top: 5px;
+    left: 0;
+    width: 86px;
+    height: 71px;
+}
+.transfer .main__content {
+    max-width: 850px;
+    width: 100%;
+    margin: 47px auto;
+    text-align: center;
+}
+
+.wrapper-card{
+    float: left;
+    max-width: 238px;
+    width: 28%;
+    color: #333;
+}
+.wrapper-card_card{
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    background-color: #f8e582;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 10px;
+    -webkit-box-shadow: 5px 5px 6px rgba(170, 170, 170, 0.64);
+    -moz-box-shadow: 5px 5px 6px rgba(170, 170, 170, 0.64);
+    -o-box-shadow: 5px 5px 6px rgba(170, 170, 170, 0.64);
+    -ms-box-shadow: 5px 5px 6px rgba(170, 170, 170, 0.64);
+    box-shadow: 5px 5px 6px rgba(170, 170, 170, 0.64);
+}
+.card_text{
+    font-size: 10px;
+    line-height: 25px;
+}
+
+.wrapper-card_card select {
+    border: none;
+    border-radius: 9px;
+    padding-left: 10px;
+    width: 90%;
+    height: 29px;
+    font-size: 16px;
+    font-family: 'Exo', 'Arial', sans-serif;
+    color: #333;
+    outline: none;
+    box-sizing: border-box;
+    padding-right: 20px;
+    -webkit-appearance: none;
+    background-image: url('../img/triangle.svg');
+    background-position: 96% center;
+    background-repeat: no-repeat;
+    background-size: 9px 8px;
+    line-height: 1em;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -ms-appearance: none;
+    appearance: none !important;
+}
+select::-ms-expand {
+    display: none;
+}
+.wrapper-amount{
+    float: left;
+    width: 238px;
+    color: #333;
+    margin: 47px 15px;
+}
+.amount_enter{
+    width: 215px;
+    height: 55px;
+    background: url("../img/send.svg") no-repeat;
+    background-size: 215px 55px;
+    margin: 6px auto 0;
+    position: relative;
+}
+.amount_enter label{
+    color: #777;
+    font-size: 12px;
+    text-align: left;
+    position: absolute;
+    left: 11px;
+    top: 18px;
+}
+.amount_enter input{
+    background-color: #fff;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 5px 3px;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Exo', 'Arial', sans-serif;
+}
+#entered-amount{
+    width: 90px;
+    height: 19px;
+    box-sizing: border-box;
+}
+.amount_bonuses{
+    color: #333;
+    font-size: 16px;
+    border-bottom: 1px solid #777;
+    padding-bottom: 5px;
+    line-height: 35px;
+    margin-left: -55px;
+}
+.amount_bonuses_text{
+    color: #777;
+    font-size: 12px;
+}
+
+.button-save{
+    margin: 38px auto;
+    padding-right: 100px;
+}
+.button-save input{
+    position: relative;
+    width: 251px;
+    height: 53px;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 5px 0 #d7d7d7;
+    -moz-box-shadow: 5px 5px 5px 0 #d7d7d7;
+    box-shadow: 5px 5px 5px 0 #d7d7d7;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: url("../img/save.svg") no-repeat 45px center #fff;
+    background-size: 38px;
+    padding-left: 65px;
+    color: #777;
+}
+.button-save input:hover{
+    top: 2px;
+    left: 2px;
+    -webkit-box-shadow: 3px 3px 3px 0 #d7d7d7;
+    -moz-box-shadow: 3px 3px 3px 0 #d7d7d7;
+    box-shadow: 3px 3px 3px 0 #d7d7d7;
+}
+.button-save input:focus{
+    top: 5px;
+    left: 5px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/*��� �����ֲ*/
+.error{
+    color: #D80000;
+    font-size: 12px;
+    visibility: hidden;
+    margin: 0 auto !important;
+    max-width: 301px;
+}
+.amount-error{
+    color: #D90000 !important;
+}
+
+.successful-transfer{
+    font-size: 18px;
+    color: #777;
+    width: 410px;
+    margin: 38px auto;
+    text-align: left;
+}
+.successful-transfer span{
+    vertical-align: middle;
+}
+.successful-transfer img{
+    margin-bottom: -15px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
