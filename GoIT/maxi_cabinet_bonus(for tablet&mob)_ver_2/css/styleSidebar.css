@@ -9,6 +9,9 @@
     bottom: 0;
     z-index: 5;
 }
+@media (max-width: 1020px) {
+  position: absolute;
+}
 .sidebar__head {
     text-align: center;
     font-size: 18px;
