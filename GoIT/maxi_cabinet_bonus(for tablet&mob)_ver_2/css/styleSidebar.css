@@ -10,7 +10,9 @@
     z-index: 5;
 }
 @media (max-width: 1020px) {
-  position: absolute;
+    .sidebar {
+       position: absolute;
+    }
 }
 .sidebar__head {
     text-align: center;
