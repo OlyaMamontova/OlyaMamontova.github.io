@@ -10,11 +10,7 @@
     z-index: 5;
 }
 @media (max-width: 1020px) {
-    .sidebar {
-       position: relative;
-       float: left;
-    margin-top: 0;
-    }
+    
 }
 .sidebar__head {
     text-align: center;
