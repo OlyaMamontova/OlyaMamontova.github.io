@@ -12,6 +12,8 @@
 @media (max-width: 1020px) {
     .sidebar {
        position: absolute;
+       top: 0;
+       left: 0;
        margin-top: 0;
     }
 }
