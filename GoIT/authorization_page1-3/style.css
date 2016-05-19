@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "Exo2";
+    src: url("fonts/Exo2/Exo2Light/Exo2Light.eot");
+    src: url("fonts/Exo2/Exo2Light/Exo2Light.ttf");
+    src: url("fonts/Exo2/Exo2Light/Exo2Light.woff");
+    font-weight: 300;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    font-family: "Exo2";
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    color: #333;
+    padding-top: 65px;
+    margin: 160px auto 100px;
+}
+.main h1{
+    position: relative;
+    font-size: 32px;
+    line-height: 50px;
+    font-weight: 400;
+}
+.main h1::before{
+    content: '';
+    position: absolute;
+    top: -85px;
+    left:50%;
+    transform: translateX(-50%);
+    background: url("img/icon1.png");
+    width: 68px;
+    height: 68px;
+}
+.form-authorization{
+    font-size: 18px;
+    color:#777;
+}
+.form-authorization p{
+    margin: 20px 0 58px;
+}
+.input{
+    position: relative;
+    max-width: 336px;
+    width: 100%;
+    margin: 0 auto;
+}
+.input .placeholder {
+    text-transform: uppercase;
+    font-size: 14px;
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    -webkit-transition: top ease .2s,font-size ease .2s;
+    -moz-transition: top ease .2s,font-size ease .2s;
+    -o-transition: top ease .2s,font-size ease .2s;
+    transition: top ease .2s,font-size ease .2s;
+    z-index: -1;
+}
+.input .placeholder.active {
+    top: -10px;
+    font-size: 10px;
+}
+.form-authorization input{
+    font-family: "Exo2";
+    color:#777;
+    font-size: 14px;
+    outline: none;
+}
+.form-authorization input[type="text"],
+.form-authorization input[type="password"]{
+    color: #000;
+    max-width: 336px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    padding-bottom: 10px;
+    margin-bottom: 17px;
+    background: 0 0;
+}
+.form-authorization input[type="text"]:focus,
+.form-authorization input[type="password"]:focus{
+    border-bottom: 1px solid #333;
+}
+.form-authorization input[type="submit"]{
+    position: relative;
+    width: 215px;
+    height: 53px;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 5px 0 #d7d7d7;
+    -moz-box-shadow: 5px 5px 5px 0 #d7d7d7;
+    box-shadow: 5px 5px 5px 0 #d7d7d7;
+    outline: none;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.form-authorization input[type="submit"]:hover{
+    top: 2px;
+    left: 2px;
+    -webkit-box-shadow: 3px 3px 3px 0 #d7d7d7;
+    -moz-box-shadow: 3px 3px 3px 0 #d7d7d7;
+    box-shadow: 3px 3px 3px 0 #d7d7d7;
+}
+.form-authorization input[type="submit"]:focus{
+    top: 5px;
+    left: 5px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/*For index2*/
+.form-login .input{
+    max-width: 301px;
+}
+.form-login .placeholder {
+    font-size: 12px;
+}
+.form-login input[type="text"],
+.form-login input[type="password"]{
+    color: #000;
+    font-family: Arial;
+    max-width: 301px;
+    width: 100%;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+.form-login .title-login{
+    margin: 15px 0 43px;
+}
+.form-login input[type="submit"]{
+    margin-top: 40px;
+}
+
+/*for index3*/
+
+.links{
+    margin: 60px auto 0;
+    text-align: left;
+    width: 220px;
+}
+.wrapper-link{
+    margin-bottom: 23px;
+    position: relative;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #777;
+    border-bottom: 1px solid #777;
+    padding-bottom: 7px;
+    padding-right: 5px;
+    margin-left: 25px;
+}
+.links a:hover{
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.links a:focus{
+    border-bottom:none;
+}
+.forgetPassword{
+    position: absolute;
+    left:-25px;
+    cursor: pointer;
+}
+.registrNewUser{
+    position: absolute;
+    left: -19px;
+    top: -10px;
+    cursor: pointer;
+}
+.wrapper-link-1:hover #forgetPassword,
+.wrapper-link-2:hover #registrNewUser{
+    fill: #ffdb53;
+}
+.form-login input[type="checkbox"]{
+    display: none;
+}
+
+.input label {
+    width: 44px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    cursor: pointer;
+    text-align: right;
+}
+input[type="checkbox"] + span {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked ~ svg #icon-show {
+    fill: #ffdb53;
+}
+.input .word-show,
+.input .word-hide{
+    font-size: 9px;
+    margin: 0;
+    position: absolute;
+    top: 23px;
+    right: 0;
+}
+.input .word-hide{
+    display: none;
+}
+input[type="checkbox"]:checked ~ .word-hide{
+    display: block;
+}
+input[type="checkbox"]:checked ~ .word-show{
+    display: none;
+}

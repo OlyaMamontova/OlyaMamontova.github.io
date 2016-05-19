@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page2</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<div class="main">
+    <h1>Особистий кабінет MAXI
+    </h1>
+
+    <form action="/" class="form-authorization form-login">
+        <p class="title-login">Твій логін і пароль</p>
+        <div class="input">
+            <input required type="text"/>
+            <div class="placeholder">Логін:</div>
+        </div>
+
+        <div class="input">
+            <input id="pass1" required type="password"/>
+            <div class="placeholder">Пароль:</div>
+            <label><input onchange="if ($('#pass1').get(0).type=='password') $('#pass1').get(0).type='text'; else $('#pass1').get(0).type='password';" type="checkbox" value="false"/>
+
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 23 12" enable-background="new 0 0 23 12" xml:space="preserve" width="24px">
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" width="23" height="12"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<path clip-path="url(#SVGID_2_)" id="icon-show" fill="#777777" d="M11.5,12c-2.6,0-5.4-1-8-2.8c-2-1.4-3.2-2.7-3.3-2.8c-0.2-0.2-0.2-0.6,0-0.8
+			c0.1-0.1,1.3-1.4,3.3-2.8C6.1,1,8.9,0,11.5,0c2.6,0,5.4,1,8,2.8c2,1.4,3.2,2.7,3.3,2.8c0.2,0.2,0.2,0.6,0,0.8
+			c-0.1,0.1-1.3,1.4-3.3,2.8C16.9,11,14.1,12,11.5,12L11.5,12z M1.5,6C2,6.5,3,7.3,4.2,8.2c1.7,1.2,4.4,2.5,7.3,2.5
+			c2.9,0,5.6-1.4,7.3-2.5C20,7.3,20.9,6.5,21.4,6c-0.5-0.5-1.4-1.3-2.7-2.2c-1.7-1.2-4.4-2.5-7.3-2.5c-2.9,0-5.6,1.4-7.3,2.5
+			C3,4.6,2,5.5,1.5,6L1.5,6z M1.5,6"/>
+	</g>
+	<path id="icon-show" fill="#777777" d="M11.5,9.8c-2.2,0-4-1.7-4-3.9c0-2.1,1.8-3.9,4-3.9c1,0,1.9,0.3,2.7,1c0.3,0.2,0.3,0.6,0.1,0.9
+		C14,4.2,13.6,4.2,13.3,4c-0.5-0.4-1.1-0.6-1.8-0.6C10,3.4,8.8,4.5,8.8,6c0,1.4,1.2,2.6,2.7,2.6c1.5,0,2.7-1.2,2.7-2.6
+		c0-0.3,0.3-0.6,0.6-0.6c0.4,0,0.6,0.3,0.6,0.6C15.5,8.1,13.7,9.8,11.5,9.8L11.5,9.8z M11.5,9.8"/>
+	<path id="icon-show" fill="#777777" d="M11.5,7.2c-0.7,0-1.3-0.6-1.3-1.2c0-0.7,0.6-1.2,1.3-1.2c0.7,0,1.3,0.6,1.3,1.2C12.8,6.7,12.2,7.2,11.5,7.2
+		L11.5,7.2z M11.5,7.2"/>
+</g>
+</svg>
+                <p class="word-show">показати</p>
+                <p class="word-hide">приховати</p>
+
+            </label>
+        </div>
+
+        <div class="input">
+            <input required type="password" id="pass2"/>
+            <div class="placeholder">Підтвердіть пароль:</div>
+            <label><input onchange="if ($('#pass2').get(0).type=='password') $('#pass2').get(0).type='text'; else $('#pass2').get(0).type='password';" type="checkbox" value="false"/>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 23 12" enable-background="new 0 0 23 12" xml:space="preserve" width="24px">
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" width="23" height="12"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<path clip-path="url(#SVGID_2_)" id="icon-show" fill="#777777" d="M11.5,12c-2.6,0-5.4-1-8-2.8c-2-1.4-3.2-2.7-3.3-2.8c-0.2-0.2-0.2-0.6,0-0.8
+			c0.1-0.1,1.3-1.4,3.3-2.8C6.1,1,8.9,0,11.5,0c2.6,0,5.4,1,8,2.8c2,1.4,3.2,2.7,3.3,2.8c0.2,0.2,0.2,0.6,0,0.8
+			c-0.1,0.1-1.3,1.4-3.3,2.8C16.9,11,14.1,12,11.5,12L11.5,12z M1.5,6C2,6.5,3,7.3,4.2,8.2c1.7,1.2,4.4,2.5,7.3,2.5
+			c2.9,0,5.6-1.4,7.3-2.5C20,7.3,20.9,6.5,21.4,6c-0.5-0.5-1.4-1.3-2.7-2.2c-1.7-1.2-4.4-2.5-7.3-2.5c-2.9,0-5.6,1.4-7.3,2.5
+			C3,4.6,2,5.5,1.5,6L1.5,6z M1.5,6"/>
+	</g>
+	<path id="icon-show" fill="#777777" d="M11.5,9.8c-2.2,0-4-1.7-4-3.9c0-2.1,1.8-3.9,4-3.9c1,0,1.9,0.3,2.7,1c0.3,0.2,0.3,0.6,0.1,0.9
+		C14,4.2,13.6,4.2,13.3,4c-0.5-0.4-1.1-0.6-1.8-0.6C10,3.4,8.8,4.5,8.8,6c0,1.4,1.2,2.6,2.7,2.6c1.5,0,2.7-1.2,2.7-2.6
+		c0-0.3,0.3-0.6,0.6-0.6c0.4,0,0.6,0.3,0.6,0.6C15.5,8.1,13.7,9.8,11.5,9.8L11.5,9.8z M11.5,9.8"/>
+	<path id="icon-show" fill="#777777" d="M11.5,7.2c-0.7,0-1.3-0.6-1.3-1.2c0-0.7,0.6-1.2,1.3-1.2c0.7,0,1.3,0.6,1.3,1.2C12.8,6.7,12.2,7.2,11.5,7.2
+		L11.5,7.2z M11.5,7.2"/>
+</g>
+</svg>
+                <p class="word-show">показати</p>
+                <p class="word-hide">приховати</p>
+            </label>
+        </div>
+
+        <input type="submit" value="Далі"/>
+    </form>
+
+</div>
+<script src="js/dom_func-2a336abf73.js"></script>
+
+<script src="js/loader-7a348afe58.js"></script>
+
+<script src="js/input-6e2ca13be4.js"></script>
+</body>
+</html>
