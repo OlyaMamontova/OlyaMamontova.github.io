@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Page5</title>
+    <link rel="stylesheet" href="styleFor5.css"/>
+    <link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.css"/>
+</head>
+<body>
+<div class="main">
+    <h1>Новий користувач кабінету MAXI</h1>
+
+    <form action="/" class="form-authorization">
+        <p>Будь ласка, підтвердіть правильність зазначених даних</p>
+
+        <div class="table-data">
+        <table class="data-1">
+            <tr>
+                <td>
+                    Прізвище:
+                    <input id="surname" type="text" placeholder="Іванов"/>
+                </td>
+                <td class="text-right">
+                    <label for="surname">
+                        <img class="change" src="img/change.svg" alt="change"/>
+                        <span class="label-word">Змінити</span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ім'я:
+                    <input id="name" type="text" placeholder="Іван"/>
+                </td>
+                <td class="text-right">
+                    <label for="name">
+                        <img class="change" src="img/change.svg" alt="change"/>
+                        <span class="label-word">Змінити</span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    По-батькові:
+                    <input id="middle-name" type="text" placeholder="Іванович"/>
+                </td>
+                <td class="text-right">
+                    <label for="middle-name">
+                        <img class="change" src="img/change.svg" alt="change"/>
+                        <span class="label-word">Змінити</span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Дата народження:
+                    <input id="datepicker" type="text" placeholder="03.04.1985"/>
+                    <!--<a href="#"><img class="calendar" src="img/calendar.svg" alt="calendar"/></a>-->
+                </td>
+                <td class="text-right">
+                    <label for="datepicker">
+                        <img class="change" src="img/change.svg" alt="change"/>
+                        <span class="label-word">Змінити</span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                Стать:
+                    <span class="data-sex">
+                        <label><input id="boy" type="radio" name="sex" checked/>Хлопець</label>
+                        <label><input id="girl" type="radio" name="sex"/>Дівчина</label>
+                    </span>
+                </td>
+                <td class="text-right">
+                    <label for="boy">
+                        <img class="change" src="img/change.svg" alt="change"/>
+                        <span class="label-word">Змінити</span>
+                    </label>
+                    <label for="girl"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Телефон:
+                    <input id="telephone" type="text" placeholder="099*****88" disabled/>
+                </td>
+                <td class="text-right">
+                    <img class="lock" src="img/lock.svg" alt="lock"/>
+                    Не підлягає зміні
+                </td>
+            </tr>
+        </table>
+
+            <table class="data-2">
+                <tr>
+                    <td>
+                        Електронна адреса:
+                        <input id="email" type="text" placeholder="aaa@ff.com"/>
+                    </td>
+                    <td class="text-right">
+                        <label for="email">
+                            <img class="change" src="img/change.svg" alt="change"/>
+                            <span class="label-word">Змінити</span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Місто:
+                        <input id="city" type="text" placeholder="Київ"/>
+                    </td>
+                    <td class="text-right">
+                        <label for="city">
+                            <img class="change" src="img/change.svg" alt="change"/>
+                            <span class="label-word">Змінити</span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Тип вулиці:
+                        <input id="street" type="text" placeholder="Вулиця"/>
+                    </td>
+                    <td class="text-right">
+                        <label for="street">
+                            <img class="change" src="img/change.svg" alt="change"/>
+                            <span class="label-word">Змінити</span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Адреса:
+                        <input id="address" type="text" placeholder="Вулиця Вулиця"/>
+                    </td>
+                    <td class="text-right">
+                        <label for="address">
+                            <img class="change" src="img/change.svg" alt="change"/>
+                            <span class="label-word">Змінити</span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Номер будинку:
+                        <input id="house" type="text" placeholder="13"/>
+                    </td>
+                    <td class="text-right">
+                        <label for="house">
+                            <img class="change" src="img/change.svg" alt="change"/>
+                            <span class="label-word">Змінити</span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Номер квартири:
+                        <input id="app" type="text" placeholder="137"/>
+                    </td>
+                    <td class="text-right">
+                        <label for="app">
+                            <img class="change" src="img/change.svg" alt="change"/>
+                            <span class="label-word">Змінити</span>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <label class="checkbox">
+            <span class="checkbox-text">Згоден з правилами програми лояльності MAXI CARD</span>
+            <input type="checkbox"/>
+            <span class="checkbox-img"></span>
+
+        </label>
+
+        <br/>
+        <input type="submit" value="Далі"/>
+    </form>
+</div>
+
+<script src="jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+<script src="jquery-ui-1.11.4.custom/jquery.ui.datepicker-ua.js"></script>
+<script src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+
+<script>
+    $(function() {
+        $( "#datepicker" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            showOn: "button",
+            buttonImage: "img/calendar17x17.svg",
+            buttonImageOnly: true,
+            buttonText: "Select date"
+        });
+    });
+    $(document).ready(function(){
+        $( "#datepicker" ).datepicker( $.datepicker.regional[ "ua" ] );
+    });
+</script>
+</body>
+</html>
