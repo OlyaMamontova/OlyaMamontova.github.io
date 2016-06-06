@@ -1,0 +1,331 @@
+body {
+    -webkit-transition: right .3s ease;
+    -moz-transition: right .3s ease;
+    -o-transition: right .3s ease;
+    transition: right .3s ease;
+    position: relative;
+}
+.wraperMenu {
+    font-family: 'Exo', 'Arial', sans-serif;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+a:active, a:hover {
+    outline: 0;
+}
+.wraperMenu .b-mainMenu {
+    background: #fff;
+    height: 50px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    width: 100%;
+    -webkit-transition: background ease .3s,right .3s ease;
+    -moz-transition: background ease .3s,right .3s ease;
+    -o-transition: background ease .3s,right .3s ease;
+    transition: background ease .3s,right .3s ease;
+}
+.menuButton {
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px auto;
+    font-size: 16px;
+    line-height: 58px;
+    height: 56px;
+    background: #ffe26f;
+    text-align: center;
+    position: relative;
+}
+.wraperMenu .b-mainMenu .wraper {
+    height: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-shadow: 0 0 20px -5px #777;
+    -moz-box-shadow: 0 0 20px -5px #777;
+    box-shadow: 0 0 20px -5px #777;
+}
+.wraperMenu .b-mainMenu .logo {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 0 14px;
+    display: inline-block;
+    width: 180px;
+    max-width: 180px;
+}
+.wraperMenu .b-mainMenu .logo img {
+    display: block;
+    width: 100%;
+}
+.wraperMenu a:not(.logo) {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-family: 'Exo', 'Arial', sans-serif;
+    font-weight: 300;
+    line-height: 50px;
+    width: 100%;
+    -webkit-transition: background ease .3s,color ease .3s;
+    -moz-transition: background ease .3s,color ease .3s;
+    -o-transition: background ease .3s,color ease .3s;
+    transition: background ease .3s,color ease .3s;
+}
+.wraperMenu .b-mainMenu .controls a {
+    width: auto;
+    padding: 0 25px;
+    height: 100%;
+    font-size: 14px;
+}
+.wraperMenu .b-mainMenu .controls .b-language {
+    padding: 0 25px;
+    height: 100%;
+    display: inline-block;
+    border-left: 2px dashed #eee;
+}
+.wraperMenu .b-mainMenu .controls a.activeLanguage, .wraperMenu .b-mainMenu .controls a:hover {
+    color: #aaa;
+}
+.wraperMenu .b-mainMenu .controls .b-language a {
+    padding: 0 6px;
+}
+.wraperMenu .b-mainMenu .controls .cabinet {
+    padding-right: 60px;
+    position: relative;
+    display: none;
+}
+.wraperMenu .b-mainMenu .iconMobileMenu {
+    display: none;
+    background: url("../img/icon_mobile_menu-4957820813.png") no-repeat;
+    width: 44px;
+    max-width: 44px;
+    height: 24px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.wraperMenu .b-mainMenu .mainMenu {
+    margin: 0;
+    height: 50px;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: right;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    position: relative;
+    background: rgba(255,255,255,.7);
+}
+.wraperMenu li {
+    list-style: none;
+}
+.wraperMenu .menuHover.elMenu {
+    color: #ffd24d!important;
+}
+.wraperMenu .b-mainMenu .mainMenu .elMenu {
+    list-style: none;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+}
+.wraperMenu .b-mainMenu .mainMenu .elMenu.active {
+    background: rgba(255,255,255,.9);
+}
+.wraperMenu .menuHover.active a {
+    color: inherit!important;
+}
+.wraperMenu .b-mainMenu .mainMenu .elMenu:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 4px;
+    width: 0;
+    -webkit-transition: width .3s;
+    -moz-transition: width .3s;
+    -o-transition: width .3s;
+    transition: width .3s;
+    background: #ffe26f;
+    border-right: 4px;
+}
+.wraperMenu .mobileMenu {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    z-index: 100;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-transition: right .3s;
+    -moz-transition: right .3s;
+    -o-transition: right .3s;
+    transition: right .3s;
+}
+.wraperMenu .mobileMenu .controls {
+    height: 50px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0 0 15px 3px #ccc;
+    -moz-box-shadow: 0 0 15px 3px #ccc;
+    box-shadow: 0 0 15px 3px #ccc;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+}
+.wraperMenu .mobileMenu .controls .close {
+    width: 30px;
+    height: 30px;
+    background: url(../img/icon_close-d5634c084c.png) no-repeat;
+    -webkit-transition: opacity .3s ease;
+    -moz-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.wraperMenu .mobileMenu .controls .labguages {
+    margin-right: 20px;
+}
+.wraperMenu .mobileMenu .controls .labguages .elMenu {
+    display: inline-block;
+    border: none;
+    border-right: 1px solid #bbb;
+}
+.wraperMenu .mobileMenu .elMenu a {
+    font-size: 14px;
+    line-height: 56px;
+    height: 55px;
+    padding-left: 25px;
+}
+.wraperMenu .mobileMenu .controls .labguages .elMenu a {
+    line-height: 22px;
+    height: 23px;
+    padding: 0 15px;
+    font-size: 18px;
+}
+.wraperMenu .mobileMenu .controls .labguages .elMenu:last-child {
+    border-right: none;
+}
+.wraperMenu .mobileMenu .wraper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 80px;
+    top: 0;
+    left: 0;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    z-index: 1;
+}
+.wraperMenu .b-mainMenu .mainMenu .elMenu:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 4px;
+    width: 0;
+    -webkit-transition: width .3s;
+    -moz-transition: width .3s;
+    -o-transition: width .3s;
+    transition: width .3s;
+    background: #ffe26f;
+    border-right: 4px;
+}
+.wraperMenu .b-mainMenu .mainMenu .elMenu:hover:after {
+    width: 90%;
+}
+@media (max-width: 1100px) {
+    .wraperMenu .b-mainMenu .logo {
+        width: 120px;
+        max-width: 120px;
+    }
+
+}
+@media (max-width: 1020px) {
+    .wraperMenu .b-mainMenu .controls {
+        display: none;
+    }
+    .wraperMenu .b-mainMenu .iconMobileMenu {
+        display: block;
+    }
+    .wraperMenu .b-mainMenu .mainMenu {
+        display: none;
+    }
+
+}
+.wraperMenu .mobileMenu.active, body {
+    right: 0;
+}
+body.activeMobileMenu {
+    right: 250px;
+    overflow: hidden!important;
+}
+menu, nav, section, summary {
+    display: block;
+}
+body.activeMobileMenu .b-mainMenu {
+    right: 250px;
+}

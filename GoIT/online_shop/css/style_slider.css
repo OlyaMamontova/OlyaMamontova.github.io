@@ -1,0 +1,41 @@
+#slider-range{
+  width: 188px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default{
+  border-radius: 100%;
+  background: #FCD936;
+  outline: none;
+  border: none;
+}
+.ui-widget-header{
+  background: #FCD936;
+}
+.ui-slider-horizontal{
+  height: 3px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+  top: -6px;
+  width: 16px;
+  height: 16px;
+}
+.ui-widget-content{
+border: none;
+}
+.choice_item p{
+  margin-top: 12px;
+}
+#amount1,
+#amount2{
+  border:0;
+  color:#333;
+  outline: none;
+  font-family: 'Exo', 'Arial', sans-serif;
+  font-size: 12px;
+  width: 50px;
+}
+#amount1{
+  float: left;
+}
+#amount2{
+  float: right;
+}

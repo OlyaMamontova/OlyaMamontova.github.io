@@ -1,0 +1,109 @@
+.main.certificate{
+    padding-top: 80px;
+}
+.certificate .main__head {
+    max-width: 890px;
+    position: relative;
+    margin-left: 0;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+.certificate .main__icon {
+    position: relative;
+    width: 290px;
+    float: left;
+    margin-top: -15px;
+    margin-left: -12px;
+}
+.certificate .main__text{
+  float: left;
+  margin-left: 10px;
+}
+.certificate .main__content {
+    max-width: 890px;
+    width: 100%;
+    margin: 10px 0;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+.certificate .main__h1{
+    font-size: 24px;
+    line-height: 35px;
+    padding-bottom: 12px;
+}
+.certificate .main__p{
+  font-size: 14px;
+  line-height: 23px;
+}
+.highlighted_text{
+  color: #F8CA2C;
+  font-weight: 600;
+}
+.main__content_title{
+  font-size: 18px;
+  word-spacing: 5px;
+}
+.main__content_text{
+  font-size: 16px;
+  line-height: 22px;
+}
+.basket{
+  width: 67px;
+  position: absolute;
+  top: -70px;
+  right: 0;
+}
+.basket_amount{
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  background: #FCD936;
+  position: absolute;
+  top: 2px;
+  left: -4px;
+  text-align: center;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.button-in-basket{
+    margin: 30px auto;
+}
+.button-in-basket input{
+    position: relative;
+    width: 158px;
+    height: 40px;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 5px 0 #d7d7d7;
+    -moz-box-shadow: 5px 5px 5px 0 #d7d7d7;
+    box-shadow: 5px 5px 5px 0 #d7d7d7;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: #fff;
+    color: #777;
+}
+.button-in-basket input:hover{
+    top: 2px;
+    left: 2px;
+    -webkit-box-shadow: 3px 3px 3px 0 #d7d7d7;
+    -moz-box-shadow: 3px 3px 3px 0 #d7d7d7;
+    box-shadow: 3px 3px 3px 0 #d7d7d7;
+}
+.button-in-basket input:focus{
+    top: 5px;
+    left: 5px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}

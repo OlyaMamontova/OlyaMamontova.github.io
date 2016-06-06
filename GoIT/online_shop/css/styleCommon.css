@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Exo';
+    src: url("../fonts/Exo2/Exo2Light/Exo2Light.eot");
+    src: url("../fonts/Exo2/Exo2Light/Exo2Light.ttf");
+    src: url("../fonts/Exo2/Exo2Light/Exo2Light.woff");
+    font-weight: 300;
+}
+body {
+    background: #fff;
+    font-family: 'Exo', 'Arial', sans-serif;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+.page {
+    position: relative;
+    margin: 120px auto;
+    color:#333;
+}
+.main{
+    margin-left: 300px;
+    padding: 0 20px;
+    color:#333;
+    min-width: 720px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    }
+.main__head {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.main__icon {
+    position: absolute;
+}
+.main__text {
+    margin-left: 95px;
+}
+.main__h1 {
+    padding: 0 0 19px 0;
+    font-size: 32px;
+}
+.main__p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #777;
+}
