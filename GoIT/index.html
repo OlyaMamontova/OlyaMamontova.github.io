@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сторінка пошуку</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="jquery.selectric.min.js"></script>
+    <link rel="stylesheet" href="selectric.css">
+    <link rel="stylesheet" href="style-search.css"/>
+</head>
+<body>
+      <div class="center_div">
+          <form action="projects.php" method="post">
+              <h1 class="proj_head">
+              <b>Пошук гуртка за критеріями</b>
+              </h1>
+              <h3>Відділ</h3> <select>
+    <option> раз </option>
+    <option> два </option>
+    <option> три </option>
+              </select>
+             <h3>День тиждня</h3>
+    <select>
+    <option> Понеділок </option>
+    <option> Вівторок </option>
+    <option> Середа </option>
+  </select>
+                <h3>Час</h3>
+                <span class="pre">з </span>
+    <select class="half_form">
+    <option> 10:00 </option>
+    <option> 11:00 </option>
+    <option> 12:00 </option>
+  </select>
+               <span>до  </span>
+      <select class="half_form">
+    <option> 11:00 </option>
+    <option> 12:00 </option>
+    <option> 13:00 </option>
+  </select>
+              <h3>Вік</h3>
+                <span>від  </span>
+    <select class="half_form">
+    <option> 4 </option>
+    <option> 5 </option>
+    <option> 6 </option>
+  </select>
+            <span>   до  </span>
+      <select class="half_form">
+    <option> 5 </option>
+    <option> 6 </option>
+    <option> 7 </option>
+  </select>
+
+          <div class="button">
+              <input type="submit" value="ЗНАЙТИ" class="submitButton">
+          </div>
+          </form>
+      </div>
+
+<script>
+      $(function() {
+        $('select').selectric();
+      });
+      </script>
+</body>
+</html>

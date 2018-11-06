@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+	color: #333;
+    font-family: "Open Sans", Helvetica;
+    font-size: 14px;
+    background: rgba(82, 165, 113, 0.3);
+  }
+  .center_div{
+    max-width:500px;
+    margin: 50px auto;
+  }
+  .proj_head{
+    text-align: center;
+  }
+  h3{
+        margin: 15px 0 5px;
+  }
+  form{
+    border: solid 2px #faa95a;
+    padding: 15px ;
+    background: #fff;
+  }
+    .button{
+      text-align: center;
+    }
+  .button input{
+  	display: inline-block;
+  	background-color: #faa95a;
+  	padding: 10px 40px 7px;
+  	color: #FFF;
+  	text-decoration: none;
+  	margin: 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+  }
+  .button input:hover{
+  	 	background: #f8c797;
+  }
+.selectric-half_form{
+  width: 42%;
+display: inline-block;
+margin-right: 10px;
+}
+.pre{
+  display: inline-block;
+  min-width: 20px;
+}
