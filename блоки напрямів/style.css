@@ -7,7 +7,7 @@ body{
   margin: auto;
   display: flex;
    justify-content: space-between;
-   background: #3f5b71;
+   background: rgba(82, 165, 113, 0.3);
    -padding-left: 150px;
    box-sizing: border-box;
 }
