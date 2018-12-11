@@ -3,34 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title>Напрями</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/jquery.selectric.min.js"></script>
+    <link rel="stylesheet" href="css/selectric.css">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/style-search.css"/>
 </head>
 <body>
+
+
 <div class="box">
-<div class="block_img">
-    <img src="logo.png" alt="">
-</div>
+
   <div class="block block_1">
-Напрям<br> перший
+    Авіаційно-космічний центр
   </div>
   <div class="block block_2">
-Напрям <br> другий
+    Відділ біології
   </div>
   <div class="block block_3">
-Напрям <br> третій
+    Відділ івент-менеджменту та арт-проектів
   </div>
   <div class="block block_4">
-Напрям<br>четвертий
+    Відділ інформаційно-комунікаційних технологій
   </div>
   <div class="block block_5">
-Напрям<br> п'ятий
+    Інформаційно-творче агентство «ЮН-ПРЕС»
   </div>
   <div class="block block_6">
-Напрям<br> шостий
+    Відділ народної творчості
   </div>
   <div class="block block_7">
-Напрям <br> сьомий
+    Організаційно-методичний відділ
+  </div>
+  <div class="block block_8">
+    Відділ туризму та краєзнавства
+  </div>
+  <div class="block block_9">
+    Відділ художньої творчості
   </div>
 </div>
+<div class="container">
+<div class="sidebar">
+      <div class="block_selects">
+      <h3>Відділ</h3>
+  <label><input type="checkbox">Хореографія, акробатика</label>
+  <label><input type="checkbox">Вокал, хор, гра на інструментах</label>
+<label><input type="checkbox">Образотворче мистецтво, ліпка, рукоділля</label>
+<label><input type="checkbox">Інформаційні технології</label>
+<label><input type="checkbox">Розвиток особистості</label>
+<label><input type="checkbox">Журналістика</label>
+<label><input type="checkbox">Шахи, шашки</label>
+<label><input type="checkbox">Колективи</label>
+
+     <h3>День тиждня</h3>
+<label><input type="checkbox">Понеділок</label>
+<label><input type="checkbox">Вівторок</label>
+<label><input type="checkbox">Середа</label>
+<label><input type="checkbox">Четвер</label>
+<label><input type="checkbox">П'ятниця</label>
+<label><input type="checkbox">Субота</label>
+<label><input type="checkbox">Неділя</label>
+        <h3>Час</h3>
+        <span class="pre">з </span>
+  <select class="half_form">
+  <option> 09:00 </option>
+  <option> 10:00 </option>
+  <option> 11:00 </option>
+  <option> 12:00 </option>
+  </select>
+       <span>до  </span>
+  <select class="half_form">
+  <option> 10:00 </option>
+  <option> 11:00 </option>
+  <option> 12:00 </option>
+  <option> 13:00 </option>
+  </select>
+      <h3>Вік</h3>
+      <label><input type="checkbox">4-6</label>
+      <label><input type="checkbox">7-9</label>
+      <label><input type="checkbox">10-12</label>
+      <label><input type="checkbox">13-15</label>
+      <label><input type="checkbox">16-18</label>
+      <label><input type="checkbox">19-21</label>
+  </div>
+</div>
+<div class="number_page">
+  <input type="button" name="" value="1">
+  <input type="button" name="" value="2">
+  <input type="button" name="" value="3">
+  <input type="button" name="" value="4">
+  <input type="button" name="" value="5">
+  <input type="button" name="" value="6">
+</div>
+  </div>
+  <script>
+        $(function() {
+          $('select').selectric();
+        });
+        </script>
 </body>
 </html>
