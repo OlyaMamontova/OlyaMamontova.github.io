@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.center_div{
+    max-width:500px;
+    margin: 50px auto;
+		border: 12px solid #faa95a;
+	 border-radius: 50px;
+	 background: rgba(82, 165, 113, 0.3);
+	 font-size: 13px;
+   font-family: "Open Sans", Helvetica;
+  }
+	.block_selects{
+		background: #fff;
+		-padding: 15px ;
+	}
+  .proj_head{
+    text-align: center;
+		margin: 20px;
+  }
+.block_selects h3{
+        margin: 15px 0 5px;
+				font-size: 20px;
+  }
+    .button_form{
+      text-align: center;
+    }
+  .button_form input{
+  	display: inline-block;
+  	background-color: #faa95a;
+  	padding: 10px 40px 7px;
+  	color: #FFF;
+  	text-decoration: none;
+  	margin: 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+		border-radius: 20px;
+  }
+  .button_form input:hover{
+  	 	background: #f8c797;
+  }
+.selectric-half_form{
+  width: 30%;
+display: inline-block;
+margin-right: 10px;
+}
+.block_selects .pre{
+  display: inline-block;
+  min-width: 20px;
+}
+.selectric-items li.highlighted, .selectric-items li.selected{
+    background: #CBE4D4;
+}
+.selectric-items li:hover{
+  background: #daeee1;
+}
+@media only screen and (max-width: 520px){
+	.selectric-half_form{
+	  width: 35%;
+}
+}
