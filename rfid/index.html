@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сторінка</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form action="" method="" class="form_id">
+      <input type="password" id="myInput">
+      <input type="submit" value="Перевірити" class="submit">
+    </form>
+    <form action="" method="" class="form_button">
+      <p>Ви за зміни в КПДЮ?</p>
+      <div class="block_button">
+        <div class="" ><input type="submit" value="ТАК" class="button button_1">  </div>
+        <div class="" ><input type="submit" value="утримався" class="button button_2">  </div>
+        <div class="" ><input type="submit" value="НІ" class="button button_3">  </div>
+      </div>
+      <div class="overlay">
+
+      </div>
+    </form>
+  </div>
+  <script type="text/javascript">
+  var typingTimer;                //timer identifier
+var doneTypingInterval = 3000;  //time in ms (3 seconds)
+
+//on keyup, start the countdown
+$('#myInput').keyup(function(){
+  clearTimeout(typingTimer);
+  if ($('#myInput').val()) {
+      typingTimer = setTimeout(doneTyping, doneTypingInterval);
+  }
+});
+//user is "finished typing," do something
+function doneTyping () {
+$('.overlay').css('display', 'none');
+$('.block_button').css('opacity', '1');
+}
+  </script>
+</body>
+</html>
