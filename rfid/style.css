@@ -16,12 +16,14 @@ body{
   height: 50px;
     font-size: 20px;
         box-sizing: border-box;
+        color: #333;
+        border: 6px solid #333;
 }
 .submit{
   background: #00aaff;
 cursor: pointer;
-color: #fff;
-border: 6px solid #fff;
+color: #333;
+border: 6px solid #333;
 -webkit-transition: all 0.3s ease;
 -moz-transition: all 0.3s ease;
 -ms-transition: all 0.3s ease;
@@ -29,7 +31,7 @@ border: 6px solid #fff;
 transition: all 0.3s ease;
 }
 .submit:hover{
-  background: #fff;
+  background: #333;
   color: #00aaff;
 }
 .block_button{
