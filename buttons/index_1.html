@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сторінка</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form action="" method="" class="form_id">
+      <input type="password" id="myInput">
+    </form>
+  </div>
+  <script type="text/javascript">
+$('#myInput').keydown(function(e) {
+   if(e.keyCode === 13) {
+     alert(this.value);
+     sendData();
+   }
+ });
+  </script>
+</body>
+</html>

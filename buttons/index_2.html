@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сторінка</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+  <h1>Ви за зміни в КПДЮ?</h1>
+
+ <div class="" onclick="button_click_1()"><input type="submit" value="ТАК" class="button button_1"></div>
+  <canvas id="myCanvas" width="500" height="500"></canvas>
+
+      <div class="" onclick="button_click_2()"><input type="submit" value="утримався" class="button button_2">  </div>
+      <canvas id="myCanvas" width="500" height="500" style=""></canvas>
+
+      <div class="" onclick="button_click_3()" ><input type="submit" value="НІ" class="button button_3">  </div>
+      <canvas id="myCanvas" width="500" height="500"></canvas>
+
+    <a href="" class="overlay" id=""></a>
+    <div class="popup">
+    Дякуємо! Ваш голос зараховано!
+    <a class="close" title="Закрити" href=""></a>
+    </div>
+
+  <script src="js/script.js"></script>
+<script type="text/javascript">
+function openPopup(){
+$('.popup').addClass('active');
+$('.overlay').show();
+};
+
+$(".button").on("click", function(){
+  setTimeout(openPopup, 2000);
+});
+
+</script>
+</body>
+</html>
