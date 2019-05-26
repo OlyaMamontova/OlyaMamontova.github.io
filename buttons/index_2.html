@@ -21,16 +21,22 @@
     <a href="" class="overlay" id=""></a>
     <div class="popup">
     Дякуємо! Ваш голос зараховано!
-    <a class="close" title="Закрити" href=""></a>
-    </div>
+    <!--<a class="close" title="Закрити" href=""></a>-->
+  </div>
 
   <script src="js/script.js"></script>
 <script type="text/javascript">
 function openPopup(){
 $('.popup').addClass('active');
 $('.overlay').show();
+setTimeout(closePopup, 2000);
+};
+function closePopup(){
+  $('.popup').removeClass('active');
+  $('.overlay').hide();
 };
 
+$(".popup").on("click", closePopup);
 $(".button").on("click", function(){
   setTimeout(openPopup, 2000);
 });
